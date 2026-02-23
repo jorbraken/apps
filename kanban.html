@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanban</title>
+  <style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}body{transition:background-color .2s ease,color .2s ease}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.kanban-theme-toggle{position:fixed;top:1rem;right:1rem;z-index:50;height:2.25rem;width:2.25rem;border-radius:.5rem;border-width:1px;font-size:1rem;line-height:1.5rem;line-height:1;border-color:#cbd5e1;background:#fff;color:#0f172a}.kanban-home-btn{right:3.65rem}.board{height:100vh;gap:1rem;overflow-x:auto;padding:1.5rem}.board,.column{display:flex}.column{flex-direction:column;border-radius:.75rem;--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity,1));min-width:280px;width:280px;max-height:calc(100vh - 3rem)}.column-header{display:flex;align-items:center;gap:.5rem;padding:.75rem 1rem;font-size:.875rem;line-height:1.25rem;font-weight:600}.col-name{flex:1 1 0%;cursor:default;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.col-rename-input{min-width:0;flex:1 1 0%;border-radius:.25rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1));background-color:hsla(0,0%,100%,.7);padding:.125rem .375rem;font-size:.875rem;line-height:1.25rem;font-weight:600;outline:2px solid transparent;outline-offset:2px}.column-header .count{border-radius:9999px;background-color:rgba(0,0,0,.15);padding-left:.5rem;padding-right:.5rem;font-size:.75rem;line-height:1rem;font-weight:500}.col-move{cursor:pointer;border-radius:.25rem;border-width:0;background-color:transparent;padding-left:.25rem;padding-right:.25rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1));opacity:0}.col-move:hover{background-color:rgba(0,0,0,.1);--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity,1))}.col-move:disabled{visibility:hidden;cursor:default}.column:hover .col-move:not(:disabled){opacity:1}.col-delete{cursor:pointer;border-radius:.25rem;border-width:0;background-color:transparent;padding-left:.25rem;padding-right:.25rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1));opacity:0}.col-delete:hover{background-color:rgba(0,0,0,.1);--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity,1))}.column:hover .col-delete{opacity:1}.cards{flex:1 1 0%;overflow-y:auto;padding-left:.5rem;padding-right:.5rem;padding-bottom:.5rem;min-height:2rem}.cards.drag-over{border-bottom-right-radius:.75rem;border-bottom-left-radius:.75rem;background-color:rgba(59,130,246,.1)}.card{margin-bottom:.5rem;cursor:grab;overflow-wrap:break-word;border-radius:.5rem;--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1));padding:.625rem .75rem;--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.card:active{cursor:grabbing}.card.dragging{opacity:.4}.card-text{margin-bottom:.25rem;font-size:.875rem;line-height:1.25rem}.card-actions{display:flex;justify-content:flex-end;gap:.25rem;opacity:0;transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.card:hover .card-actions{opacity:1}.card-actions button{cursor:pointer;border-radius:.25rem;border-width:0;background-color:transparent;padding:.125rem .375rem;font-size:.75rem;line-height:1rem;--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.card-actions button:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity,1))}.add-card{padding:.5rem}.add-card button{width:100%;cursor:pointer;border-radius:.5rem;border-width:0;background-color:transparent;padding:.375rem .75rem;text-align:left;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.add-card button:hover{background-color:rgba(0,0,0,.08);--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity,1))}.add-column{flex-shrink:0;align-self:flex-start}.add-column>button{cursor:pointer;white-space:nowrap;border-radius:.75rem;border-width:0;background-color:rgba(0,0,0,.1);padding:.625rem 1rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity,1))}.add-column>button:hover{background-color:rgba(0,0,0,.15)}.add-column-form{flex-shrink:0;border-radius:.75rem;--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity,1));padding:.75rem;min-width:280px;width:280px}.add-column-form input{margin-bottom:.5rem;width:100%;border-radius:.5rem;border-width:2px;--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1));padding:.5rem .625rem;font-size:.875rem;line-height:1.25rem;outline:2px solid transparent;outline-offset:2px}.add-column-form .form-buttons{display:flex;gap:.375rem}.add-column-form .btn-add{cursor:pointer;border-radius:.25rem;border-width:0;--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1));padding:.375rem .75rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.add-column-form .btn-add:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.add-column-form .btn-cancel{cursor:pointer;border-width:0;background-color:transparent;padding:.375rem .5rem;font-size:1.25rem;line-height:1.75rem;line-height:1;--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.add-column-form .btn-cancel:hover{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity,1))}.add-form{padding-left:.5rem;padding-right:.5rem;padding-bottom:.5rem}.add-form textarea{width:100%;resize:none;border-radius:.5rem;border-width:2px;--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1));padding:.5rem .625rem;font-family:inherit;font-size:.875rem;line-height:1.25rem;line-height:1.375;outline:2px solid transparent;outline-offset:2px}.add-form .form-buttons{margin-top:.375rem;display:flex;gap:.375rem}.add-form .btn-add{cursor:pointer;border-radius:.25rem;border-width:0;--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1));padding:.375rem .75rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.add-form .btn-add:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.add-form .btn-cancel{cursor:pointer;border-width:0;background-color:transparent;padding:.375rem .5rem;font-size:1.25rem;line-height:1.75rem;line-height:1;--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.add-form .btn-cancel:hover{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity,1))}.border{border-width:1px}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity,1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity,1))}.blur{--tw-blur:blur(8px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}[data-theme=dark] body{background:#0b1220!important;color:#e2e8f0!important}[data-theme=dark] .kanban-theme-toggle{background:#111827;color:#f8fafc;border-color:#334155}[data-theme=dark] .add-column-form,[data-theme=dark] .column{background:#1e293b;color:#e2e8f0}[data-theme=dark] .card{background:#0f172a;color:#e2e8f0}[data-theme=dark] .add-card button,[data-theme=dark] .card-actions button,[data-theme=dark] .col-delete,[data-theme=dark] .col-move{color:#94a3b8}[data-theme=dark] .add-card button:hover,[data-theme=dark] .card-actions button:hover{background:#334155;color:#f8fafc}
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <button id="dashboard-btn" class="kanban-theme-toggle kanban-home-btn" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+  <button id="theme-toggle" class="kanban-theme-toggle" aria-label="Switch theme" title="Switch theme"></button>
+  <div class="board" id="board"></div>
+  <script>
+(function () {
+  const KEY = 'spa-theme';
+  const VALID = new Set(['dark', 'light']);
+  let initialized = false;
+
+  function normalize(mode) {
+    return VALID.has(mode) ? mode : null;
+  }
+
+  function readStored() {
+    try {
+      return normalize(localStorage.getItem(KEY));
+    } catch {
+      return null;
+    }
+  }
+
+  function apply(mode) {
+    document.documentElement.dataset.theme = mode;
+    document.documentElement.style.colorScheme = mode;
+  }
+
+  function emit(mode) {
+    window.dispatchEvent(new CustomEvent('themechange', { detail: { mode } }));
+  }
+
+  function get() {
+    return normalize(document.documentElement.dataset.theme) || 'dark';
+  }
+
+  function set(mode, persist = true) {
+    const normalized = normalize(mode) || 'dark';
+    apply(normalized);
+    if (persist) {
+      try {
+        localStorage.setItem(KEY, normalized);
+      } catch {
+        // ignore storage failures
+      }
+    }
+    emit(normalized);
+    return normalized;
+  }
+
+  function init(options = {}) {
+    const fallback = normalize(options.defaultMode) || 'dark';
+    const stored = readStored();
+    const mode = stored || fallback;
+    apply(mode);
+    if (!stored) {
+      try {
+        localStorage.setItem(KEY, mode);
+      } catch {
+        // ignore storage failures
+      }
+    }
+    if (!initialized) {
+      emit(mode);
+      initialized = true;
+    }
+    return mode;
+  }
+
+  function toggle() {
+    return set(get() === 'dark' ? 'light' : 'dark');
+  }
+
+  function mountToggle(button, options = {}) {
+    if (!button) return;
+
+    const darkIcon = options.darkIcon || '☀';
+    const lightIcon = options.lightIcon || '☾';
+
+    const sync = () => {
+      const mode = get();
+      const next = mode === 'dark' ? 'light' : 'dark';
+      button.textContent = mode === 'dark' ? darkIcon : lightIcon;
+      button.setAttribute('aria-label', `Switch to ${next} mode`);
+      button.setAttribute('title', `Switch to ${next} mode`);
+      button.dataset.mode = mode;
+    };
+
+    button.addEventListener('click', () => toggle());
+    window.addEventListener('themechange', sync);
+    sync();
+  }
+
+  window.Theme = {
+    init,
+    get,
+    set,
+    toggle,
+    mountToggle,
+  };
+
+  window.AppNav = {
+    goDashboard() {
+      window.location.href = 'dashboard.html';
+    },
+  };
+})();
+  </script>
+  <script>
+// --- DB ---
+function dbOpen() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open('kanban-app', 1);
+    req.onupgradeneeded = () => req.result.createObjectStore('state');
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbGet(db, key) {
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('state').objectStore('state').get(key);
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbPut(db, key, val) {
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('state', 'readwrite').objectStore('state').put(val, key);
+    req.onsuccess = () => resolve();
+    req.onerror = () => reject(req.error);
+  });
+}
+
+// --- State ---
+const COLUMNS = ['To Do', 'In Progress', 'Done'];
+const DEFAULT_STATE = { columns: COLUMNS.map(name => ({ name, cards: [] })) };
+
+let db;
+let state = DEFAULT_STATE;
+let dragData = null;
+let nextId = Date.now();
+
+// --- Persistence ---
+function save() {
+  dbPut(db, 'state', state);
+  render();
+}
+
+// --- Card element factory ---
+function makeCardEl(colIdx, cardIdx) {
+  const card = state.columns[colIdx].cards[cardIdx];
+  const cardEl = document.createElement('div');
+  cardEl.className = 'card';
+  cardEl.draggable = true;
+  cardEl.dataset.col = colIdx;
+  cardEl.dataset.card = cardIdx;
+  cardEl.innerHTML = `
+    <div class="card-text">${escapeHtml(card.text)}</div>
+    <div class="card-actions">
+      <button class="edit-btn" title="Edit">✏️</button>
+      <button class="delete-btn" title="Delete">🗑️</button>
+    </div>
+  `;
+  cardEl.addEventListener('dragstart', onDragStart);
+  cardEl.addEventListener('dragend', onDragEnd);
+  cardEl.querySelector('.delete-btn').addEventListener('click', () => deleteCard(colIdx, cardIdx));
+  cardEl.querySelector('.edit-btn').addEventListener('click', () => editCard(colIdx, cardIdx));
+  return cardEl;
+}
+
+// --- Render ---
+function render() {
+  const board = document.getElementById('board');
+  board.innerHTML = '';
+
+  state.columns.forEach((col, colIdx) => {
+    const colEl = document.createElement('div');
+    colEl.className = 'column';
+
+    // Header
+    const isFirst = colIdx === 0;
+    const isLast = colIdx === state.columns.length - 1;
+    colEl.innerHTML = `
+      <div class="column-header">
+        <span class="col-name">${escapeHtml(col.name)}</span>
+        <span class="count">${col.cards.length}</span>
+        <button class="col-move col-move-left"  title="Move left"  ${isFirst ? 'disabled' : ''}>←</button>
+        <button class="col-move col-move-right" title="Move right" ${isLast ? 'disabled' : ''}>→</button>
+        <button class="col-delete" title="Delete column">&times;</button>
+      </div>
+    `;
+    colEl.querySelector('.col-delete').addEventListener('click', () => deleteColumn(colIdx));
+    colEl.querySelector('.col-name').addEventListener('dblclick', () => renameColumn(colIdx));
+    colEl.querySelector('.col-move-left').addEventListener('click', () => moveColumn(colIdx, -1));
+    colEl.querySelector('.col-move-right').addEventListener('click', () => moveColumn(colIdx, 1));
+
+    // Cards container
+    const cardsEl = document.createElement('div');
+    cardsEl.className = 'cards';
+    cardsEl.dataset.col = colIdx;
+
+    cardsEl.addEventListener('dragover', onDragOver);
+    cardsEl.addEventListener('dragleave', onDragLeave);
+    cardsEl.addEventListener('drop', onDrop);
+
+    col.cards.forEach((card, cardIdx) => {
+      cardsEl.appendChild(makeCardEl(colIdx, cardIdx));
+    });
+
+    colEl.appendChild(cardsEl);
+
+    // Add card button / form
+    const addEl = document.createElement('div');
+    addEl.className = 'add-card';
+    addEl.innerHTML = `<button>+ Add a card</button>`;
+    addEl.querySelector('button').addEventListener('click', () => showAddForm(colIdx));
+    colEl.appendChild(addEl);
+
+    board.appendChild(colEl);
+  });
+
+  // Add column panel
+  const addColEl = document.createElement('div');
+  addColEl.className = 'add-column';
+  addColEl.innerHTML = `<button>+ Add column</button>`;
+  addColEl.querySelector('button').addEventListener('click', showAddColumnForm);
+  board.appendChild(addColEl);
+}
+
+// --- Add card ---
+function showAddForm(colIdx) {
+  const columns = document.querySelectorAll('.column');
+  const col = columns[colIdx];
+  const addEl = col.querySelector('.add-card');
+
+  const form = document.createElement('div');
+  form.className = 'add-form';
+  form.innerHTML = `
+    <textarea rows="2" placeholder="Enter card text..."></textarea>
+    <div class="form-buttons">
+      <button class="btn-add">Add</button>
+      <button class="btn-cancel">&times;</button>
+    </div>
+  `;
+
+  addEl.replaceWith(form);
+
+  const textarea = form.querySelector('textarea');
+  textarea.focus();
+
+  const cardsEl = col.querySelector('.cards');
+  const countEl = col.querySelector('.count');
+
+  const submit = () => {
+    const text = textarea.value.trim();
+    if (!text) return;
+    state.columns[colIdx].cards.push({ id: nextId++, text });
+    dbPut(db, 'state', state);
+    const cardIdx = state.columns[colIdx].cards.length - 1;
+    cardsEl.appendChild(makeCardEl(colIdx, cardIdx));
+    cardsEl.scrollTop = cardsEl.scrollHeight;
+    countEl.textContent = state.columns[colIdx].cards.length;
+    textarea.value = '';
+    textarea.focus();
+  };
+
+  form.querySelector('.btn-add').addEventListener('click', submit);
+  form.querySelector('.btn-cancel').addEventListener('click', () => render());
+  textarea.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      submit();
+    }
+    if (e.key === 'Escape') render();
+  });
+}
+
+// --- Edit card ---
+function editCard(colIdx, cardIdx) {
+  const card = state.columns[colIdx].cards[cardIdx];
+  const cardEls = document.querySelectorAll('.column')[colIdx].querySelectorAll('.card');
+  const cardEl = cardEls[cardIdx];
+
+  const textarea = document.createElement('textarea');
+  textarea.value = card.text;
+  textarea.rows = 2;
+  const darkMode = document.documentElement.dataset.theme === 'dark';
+  const border = darkMode ? '#38bdf8' : '#4a90d9';
+  const bg = darkMode ? '#0f172a' : '#ffffff';
+  const fg = darkMode ? '#e2e8f0' : '#0f172a';
+  textarea.style.cssText = `width:100%;padding:0.4rem;border:2px solid ${border};border-radius:4px;font:inherit;font-size:0.9rem;resize:none;outline:none;background:${bg};color:${fg};`;
+
+  cardEl.innerHTML = '';
+  cardEl.draggable = false;
+  cardEl.appendChild(textarea);
+  textarea.focus();
+  textarea.setSelectionRange(textarea.value.length, textarea.value.length);
+
+  const commit = () => {
+    const text = textarea.value.trim();
+    if (text) {
+      state.columns[colIdx].cards[cardIdx].text = text;
+    }
+    save();
+  };
+
+  textarea.addEventListener('blur', commit);
+  textarea.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); commit(); }
+    if (e.key === 'Escape') render();
+  });
+}
+
+// --- Delete card ---
+function deleteCard(colIdx, cardIdx) {
+  state.columns[colIdx].cards.splice(cardIdx, 1);
+  save();
+}
+
+// --- Add column ---
+function showAddColumnForm() {
+  const board = document.getElementById('board');
+  const addColEl = board.querySelector('.add-column');
+
+  const form = document.createElement('div');
+  form.className = 'add-column-form';
+  form.innerHTML = `
+    <input type="text" placeholder="Column name..." maxlength="50">
+    <div class="form-buttons">
+      <button class="btn-add">Add</button>
+      <button class="btn-cancel">&times;</button>
+    </div>
+  `;
+  addColEl.replaceWith(form);
+  const input = form.querySelector('input');
+  input.focus();
+
+  const submit = () => {
+    const name = input.value.trim();
+    if (!name) { render(); return; }
+    const exists = state.columns.some(c => c.name.toLowerCase() === name.toLowerCase());
+    if (exists) {
+      input.setCustomValidity('A column with this name already exists');
+      input.reportValidity();
+      return;
+    }
+    state.columns.push({ name, cards: [] });
+    save();
+  };
+
+  input.addEventListener('input', () => input.setCustomValidity(''));
+
+  form.querySelector('.btn-add').addEventListener('click', submit);
+  form.querySelector('.btn-cancel').addEventListener('click', () => render());
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); submit(); }
+    if (e.key === 'Escape') render();
+  });
+}
+
+// --- Rename column ---
+function renameColumn(colIdx) {
+  const colEl = document.querySelectorAll('.column')[colIdx];
+  const nameEl = colEl.querySelector('.col-name');
+  const original = state.columns[colIdx].name;
+
+  const input = document.createElement('input');
+  input.type = 'text';
+  input.value = original;
+  input.className = 'col-rename-input';
+  nameEl.replaceWith(input);
+  input.focus();
+  input.select();
+
+  const validate = (name) => {
+    if (!name) { input.setCustomValidity('Column name cannot be empty'); return false; }
+    const duplicate = state.columns.some((c, i) => i !== colIdx && c.name.toLowerCase() === name.toLowerCase());
+    if (duplicate) { input.setCustomValidity('A column with this name already exists'); return false; }
+    input.setCustomValidity('');
+    return true;
+  };
+
+  const commit = () => {
+    const name = input.value.trim();
+    if (!validate(name)) { input.reportValidity(); return; }
+    state.columns[colIdx].name = name;
+    save();
+  };
+
+  input.addEventListener('input', () => input.setCustomValidity(''));
+  input.addEventListener('blur', commit);
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); input.removeEventListener('blur', commit); commit(); }
+    if (e.key === 'Escape') { e.preventDefault(); input.removeEventListener('blur', commit); render(); }
+  });
+}
+
+// --- Move column ---
+function moveColumn(colIdx, dir) {
+  const newIdx = colIdx + dir;
+  if (newIdx < 0 || newIdx >= state.columns.length) return;
+  const [col] = state.columns.splice(colIdx, 1);
+  state.columns.splice(newIdx, 0, col);
+  save();
+}
+
+// --- Delete column ---
+function deleteColumn(colIdx) {
+  state.columns.splice(colIdx, 1);
+  save();
+}
+
+// --- Drag & drop ---
+function onDragStart(e) {
+  const col = parseInt(e.target.dataset.col);
+  const card = parseInt(e.target.dataset.card);
+  dragData = { col, card };
+  e.target.classList.add('dragging');
+  e.dataTransfer.effectAllowed = 'move';
+}
+
+function onDragEnd(e) {
+  e.target.classList.remove('dragging');
+  document.querySelectorAll('.cards').forEach(el => el.classList.remove('drag-over'));
+  dragData = null;
+}
+
+function onDragOver(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = 'move';
+  e.currentTarget.classList.add('drag-over');
+}
+
+function onDragLeave(e) {
+  e.currentTarget.classList.remove('drag-over');
+}
+
+function onDrop(e) {
+  e.preventDefault();
+  e.currentTarget.classList.remove('drag-over');
+  if (!dragData) return;
+
+  const toCol = parseInt(e.currentTarget.dataset.col);
+  const [card] = state.columns[dragData.col].cards.splice(dragData.card, 1);
+
+  // Find insertion index based on drop position
+  const cardEls = [...e.currentTarget.querySelectorAll('.card:not(.dragging)')];
+  let insertIdx = cardEls.length;
+  for (let i = 0; i < cardEls.length; i++) {
+    const rect = cardEls[i].getBoundingClientRect();
+    if (e.clientY < rect.top + rect.height / 2) {
+      insertIdx = i;
+      break;
+    }
+  }
+
+  state.columns[toCol].cards.splice(insertIdx, 0, card);
+  save();
+}
+
+// --- Util ---
+function escapeHtml(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+// --- Init ---
+(async () => {
+  Theme.init({ defaultMode: 'dark' });
+  const dashboardBtn = document.getElementById('dashboard-btn');
+  if (dashboardBtn) {
+    dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+  }
+  Theme.mountToggle(document.getElementById('theme-toggle'));
+  db = await dbOpen();
+  state = (await dbGet(db, 'state')) || DEFAULT_STATE;
+  render();
+})();
+  </script>
+</body>
+
+</html>

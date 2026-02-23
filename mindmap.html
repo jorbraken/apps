@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindmap</title>
+  <style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}body{background:#0f172a;color:#e2e8f0;transition:background-color .2s ease,color .2s ease}.toolbar{position:fixed;left:0;right:0;top:0;z-index:50;display:flex;align-items:center;gap:.375rem;--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1));padding:.5rem 1rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.toolbar .title{margin-right:auto;font-size:1rem;line-height:1.5rem;font-weight:600}.toolbar button{cursor:pointer;border-radius:.25rem;border-width:0;background-color:hsla(0,0%,100%,.15);padding:.25rem .625rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.toolbar button:hover{background-color:hsla(0,0%,100%,.25)}.btn-add-child{display:flex;height:22px;width:22px;cursor:pointer;align-items:center;justify-content:center;border-radius:9999px;border-width:0;--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1));padding:0;font-size:.75rem;line-height:1rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.btn-add-child:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.btn-delete{display:flex;height:22px;width:22px;cursor:pointer;align-items:center;justify-content:center;border-radius:9999px;border-width:0;--tw-bg-opacity:1;background-color:rgb(239 68 68/var(--tw-bg-opacity,1));padding:0;font-size:.75rem;line-height:1rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.btn-delete:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28/var(--tw-bg-opacity,1))}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.blur{--tw-blur:blur(8px)}.blur,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}body{height:100vh}.canvas,body{overflow:hidden}.canvas{position:absolute;top:42px;left:0;right:0;bottom:0;cursor:grab}.canvas.grabbing{cursor:grabbing}#viewport{transform-origin:0 0}#lines,#viewport{position:absolute;top:0;left:0}#lines{overflow:visible;pointer-events:none}#lines path{fill:none;stroke:#94a3b8;stroke-width:2}#nodes{top:0;left:0}#nodes,.node{position:absolute}.node{display:flex;align-items:center;gap:.25rem;cursor:grab;-webkit-user-select:none;-moz-user-select:none;user-select:none}.node.dragging{cursor:grabbing;z-index:10}.node-body{background:#fff;border:2px solid #e2e8f0;border-radius:8px;padding:.4rem .75rem;font-size:.9rem;min-width:60px;text-align:center;white-space:nowrap}.node.root .node-body{background:#3b82f6;color:#fff;border-color:#2563eb;font-weight:600;font-size:1rem}.node-body:focus,.node:hover .node-body{border-color:#3b82f6}.node-body:focus{outline:none;box-shadow:0 0 0 2px rgba(59,130,246,.3)}.node-actions{display:flex;gap:2px;opacity:0;transition:opacity .1s}.node:hover .node-actions{opacity:1}[data-theme=light] body{background:#f8fafc;color:#0f172a}[data-theme=light] .toolbar{background:#e2e8f0;color:#0f172a}[data-theme=light] .toolbar button{background:#fff;color:#0f172a}[data-theme=light] .canvas{background:#f8fafc}[data-theme=light] .node-body{background:#fff;color:#0f172a}
+  </style>
+</head>
+
+<body>
+  <div class="toolbar">
+    <span class="title">Mindmap</span>
+    <button id="dashboard-btn" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+    <button id="theme-toggle" aria-label="Switch theme" title="Switch theme"></button>
+    <button id="btn-zoom-in">+</button>
+    <button id="btn-zoom-out">&minus;</button>
+    <button id="btn-fit">Fit</button>
+    <button id="btn-clear">Clear</button>
+  </div>
+  <div class="canvas" id="canvas">
+    <div id="viewport">
+      <svg id="lines"></svg>
+      <div id="nodes"></div>
+    </div>
+  </div>
+  <script>
+(function () {
+  const KEY = 'spa-theme';
+  const VALID = new Set(['dark', 'light']);
+  let initialized = false;
+
+  function normalize(mode) {
+    return VALID.has(mode) ? mode : null;
+  }
+
+  function readStored() {
+    try {
+      return normalize(localStorage.getItem(KEY));
+    } catch {
+      return null;
+    }
+  }
+
+  function apply(mode) {
+    document.documentElement.dataset.theme = mode;
+    document.documentElement.style.colorScheme = mode;
+  }
+
+  function emit(mode) {
+    window.dispatchEvent(new CustomEvent('themechange', { detail: { mode } }));
+  }
+
+  function get() {
+    return normalize(document.documentElement.dataset.theme) || 'dark';
+  }
+
+  function set(mode, persist = true) {
+    const normalized = normalize(mode) || 'dark';
+    apply(normalized);
+    if (persist) {
+      try {
+        localStorage.setItem(KEY, normalized);
+      } catch {
+        // ignore storage failures
+      }
+    }
+    emit(normalized);
+    return normalized;
+  }
+
+  function init(options = {}) {
+    const fallback = normalize(options.defaultMode) || 'dark';
+    const stored = readStored();
+    const mode = stored || fallback;
+    apply(mode);
+    if (!stored) {
+      try {
+        localStorage.setItem(KEY, mode);
+      } catch {
+        // ignore storage failures
+      }
+    }
+    if (!initialized) {
+      emit(mode);
+      initialized = true;
+    }
+    return mode;
+  }
+
+  function toggle() {
+    return set(get() === 'dark' ? 'light' : 'dark');
+  }
+
+  function mountToggle(button, options = {}) {
+    if (!button) return;
+
+    const darkIcon = options.darkIcon || '☀';
+    const lightIcon = options.lightIcon || '☾';
+
+    const sync = () => {
+      const mode = get();
+      const next = mode === 'dark' ? 'light' : 'dark';
+      button.textContent = mode === 'dark' ? darkIcon : lightIcon;
+      button.setAttribute('aria-label', `Switch to ${next} mode`);
+      button.setAttribute('title', `Switch to ${next} mode`);
+      button.dataset.mode = mode;
+    };
+
+    button.addEventListener('click', () => toggle());
+    window.addEventListener('themechange', sync);
+    sync();
+  }
+
+  window.Theme = {
+    init,
+    get,
+    set,
+    toggle,
+    mountToggle,
+  };
+
+  window.AppNav = {
+    goDashboard() {
+      window.location.href = 'dashboard.html';
+    },
+  };
+})();
+  </script>
+  <script>
+// --- DB ---
+function dbOpen() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open('mindmap-app', 1);
+    req.onupgradeneeded = () => req.result.createObjectStore('state');
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbGet(db, key) {
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('state').objectStore('state').get(key);
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbPut(db, key, val) {
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('state', 'readwrite').objectStore('state').put(val, key);
+    req.onsuccess = () => resolve();
+    req.onerror = () => reject(req.error);
+  });
+}
+
+// --- State ---
+let db;
+let nextId = 2;
+const DEFAULT_STATE = {
+  nodes: {
+    '1': { id: '1', text: 'Central Idea', x: 0, y: 0, children: [] }
+  },
+  root: '1'
+};
+let state = DEFAULT_STATE;
+
+// View: pan & zoom
+let panX = 0, panY = 0, zoom = 1;
+
+function save() {
+  dbPut(db, 'state', state);
+}
+
+// --- Render ---
+const viewportEl = document.getElementById('viewport');
+const svgEl = document.getElementById('lines');
+const nodesEl = document.getElementById('nodes');
+const canvasEl = document.getElementById('canvas');
+
+function render() {
+  nodesEl.innerHTML = '';
+  svgEl.innerHTML = '';
+
+  updateTransform();
+
+  for (const node of Object.values(state.nodes)) {
+    const el = document.createElement('div');
+    el.className = 'node' + (node.id === state.root ? ' root' : '');
+    el.style.left = node.x + 'px';
+    el.style.top = node.y + 'px';
+    el.dataset.id = node.id;
+
+    const isRoot = node.id === state.root;
+    el.innerHTML = `
+      <div class="node-body" contenteditable="true" spellcheck="false">${escapeHtml(node.text)}</div>
+      <div class="node-actions">
+        <button class="btn-add-child" title="Add child">+</button>
+        ${isRoot ? '' : '<button class="btn-delete" title="Delete">&times;</button>'}
+      </div>
+    `;
+
+    const body = el.querySelector('.node-body');
+    body.addEventListener('blur', () => {
+      const newText = body.textContent.trim() || 'Untitled';
+      if (newText !== node.text) {
+        node.text = newText;
+        save();
+      }
+    });
+    body.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); body.blur(); }
+      if (e.key === 'Escape') { body.textContent = node.text; body.blur(); }
+    });
+    body.addEventListener('mousedown', (e) => e.stopPropagation());
+
+    el.querySelector('.btn-add-child').addEventListener('click', (e) => {
+      e.stopPropagation();
+      addChild(node.id);
+    });
+
+    const delBtn = el.querySelector('.btn-delete');
+    if (delBtn) {
+      delBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        deleteNode(node.id);
+      });
+    }
+
+    setupNodeDrag(el, node);
+    nodesEl.appendChild(el);
+  }
+
+  drawLines();
+}
+
+function updateTransform() {
+  viewportEl.style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
+}
+
+function drawLines() {
+  svgEl.innerHTML = '';
+
+  for (const node of Object.values(state.nodes)) {
+    const parentEl = nodesEl.querySelector(`[data-id="${node.id}"] .node-body`);
+    if (!parentEl) continue;
+
+    for (const childId of node.children) {
+      const childEl = nodesEl.querySelector(`[data-id="${childId}"] .node-body`);
+      if (!childEl) continue;
+
+      const pNode = state.nodes[node.id];
+      const cNode = state.nodes[childId];
+      const pw = parentEl.offsetWidth;
+      const ph = parentEl.offsetHeight;
+      const cw = childEl.offsetWidth;
+      const ch = childEl.offsetHeight;
+
+      const x1 = pNode.x + pw / 2;
+      const y1 = pNode.y + ph / 2;
+      const x2 = cNode.x + cw / 2;
+      const y2 = cNode.y + ch / 2;
+
+      const dx = (x2 - x1) * 0.4;
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', `M${x1},${y1} C${x1 + dx},${y1} ${x2 - dx},${y2} ${x2},${y2}`);
+      svgEl.appendChild(path);
+    }
+  }
+}
+
+// --- Actions ---
+function addChild(parentId) {
+  const parent = state.nodes[parentId];
+  const id = String(nextId++);
+  const angle = parent.children.length * 0.8 + Math.random() * 0.4;
+  const dist = 160;
+  const x = parent.x + Math.cos(angle) * dist;
+  const y = parent.y + Math.sin(angle) * dist;
+
+  state.nodes[id] = { id, text: 'New idea', x: Math.round(x), y: Math.round(y), children: [] };
+  parent.children.push(id);
+  save();
+  render();
+
+  requestAnimationFrame(() => {
+    const body = nodesEl.querySelector(`[data-id="${id}"] .node-body`);
+    if (body) {
+      body.focus();
+      document.getSelection().selectAllChildren(body);
+    }
+  });
+}
+
+function deleteNode(nodeId) {
+  const parentId = Object.keys(state.nodes).find(id =>
+    state.nodes[id].children.includes(nodeId)
+  );
+  if (!parentId) return;
+
+  const toDelete = [];
+  const collect = (id) => {
+    toDelete.push(id);
+    (state.nodes[id]?.children || []).forEach(collect);
+  };
+  collect(nodeId);
+
+  state.nodes[parentId].children = state.nodes[parentId].children.filter(id => id !== nodeId);
+  toDelete.forEach(id => delete state.nodes[id]);
+
+  save();
+  render();
+}
+
+// --- Node dragging ---
+function setupNodeDrag(el, node) {
+  let startX, startY, origX, origY;
+
+  el.addEventListener('mousedown', (e) => {
+    if (e.target.closest('.node-actions') || e.target.isContentEditable) return;
+    e.stopPropagation();
+    e.preventDefault();
+
+    startX = e.clientX;
+    startY = e.clientY;
+    origX = node.x;
+    origY = node.y;
+    el.classList.add('dragging');
+
+    const onMove = (e) => {
+      node.x = origX + (e.clientX - startX) / zoom;
+      node.y = origY + (e.clientY - startY) / zoom;
+      el.style.left = node.x + 'px';
+      el.style.top = node.y + 'px';
+      drawLines();
+    };
+
+    const onUp = () => {
+      el.classList.remove('dragging');
+      node.x = Math.round(node.x);
+      node.y = Math.round(node.y);
+      save();
+      window.removeEventListener('mousemove', onMove);
+      window.removeEventListener('mouseup', onUp);
+    };
+
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onUp);
+  });
+}
+
+// --- Canvas pan ---
+{
+  let panning = false, startX, startY, origPanX, origPanY;
+
+  canvasEl.addEventListener('mousedown', (e) => {
+    if (e.target !== canvasEl && e.target !== svgEl) return;
+    panning = true;
+    startX = e.clientX;
+    startY = e.clientY;
+    origPanX = panX;
+    origPanY = panY;
+    canvasEl.classList.add('grabbing');
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!panning) return;
+    panX = origPanX + (e.clientX - startX);
+    panY = origPanY + (e.clientY - startY);
+    updateTransform();
+  });
+
+  window.addEventListener('mouseup', () => {
+    panning = false;
+    canvasEl.classList.remove('grabbing');
+  });
+
+  canvasEl.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? 0.9 : 1.1;
+    const rect = canvasEl.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+
+    panX = mx - (mx - panX) * delta;
+    panY = my - (my - panY) * delta;
+    zoom *= delta;
+    zoom = Math.max(0.2, Math.min(3, zoom));
+    updateTransform();
+  }, { passive: false });
+}
+
+// --- Toolbar ---
+document.getElementById('btn-zoom-in').addEventListener('click', () => {
+  zoom = Math.min(3, zoom * 1.2);
+  updateTransform();
+});
+
+document.getElementById('btn-zoom-out').addEventListener('click', () => {
+  zoom = Math.max(0.2, zoom / 1.2);
+  updateTransform();
+});
+
+document.getElementById('btn-fit').addEventListener('click', () => {
+  const nodes = Object.values(state.nodes);
+  if (nodes.length === 0) return;
+
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  nodes.forEach(n => {
+    minX = Math.min(minX, n.x);
+    minY = Math.min(minY, n.y);
+    maxX = Math.max(maxX, n.x + 150);
+    maxY = Math.max(maxY, n.y + 40);
+  });
+
+  const rect = canvasEl.getBoundingClientRect();
+  const padding = 80;
+  const w = maxX - minX + padding * 2;
+  const h = maxY - minY + padding * 2;
+  zoom = Math.min(rect.width / w, rect.height / h, 1.5);
+  panX = (rect.width - w * zoom) / 2 - minX * zoom + padding * zoom;
+  panY = (rect.height - h * zoom) / 2 - minY * zoom + padding * zoom;
+  updateTransform();
+  drawLines();
+});
+
+document.getElementById('btn-clear').addEventListener('click', () => {
+  if (!confirm('Clear the entire mindmap?')) return;
+  state = JSON.parse(JSON.stringify(DEFAULT_STATE));
+  nextId = 2;
+  save();
+  panX = 0; panY = 0; zoom = 1;
+  centerRoot();
+  render();
+});
+
+// --- Util ---
+function escapeHtml(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function centerRoot() {
+  const rect = canvasEl.getBoundingClientRect();
+  panX = rect.width / 2;
+  panY = rect.height / 2;
+}
+
+// --- Init ---
+(async () => {
+  Theme.init({ defaultMode: 'dark' });
+  const dashboardBtn = document.getElementById('dashboard-btn');
+  if (dashboardBtn) {
+    dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+  }
+  Theme.mountToggle(document.getElementById('theme-toggle'));
+  db = await dbOpen();
+  const saved = await dbGet(db, 'state');
+  if (saved) {
+    state = saved;
+    nextId = Math.max(...Object.keys(state.nodes).map(Number)) + 1;
+  }
+  centerRoot();
+  render();
+})();
+  </script>
+</body>
+
+</html>

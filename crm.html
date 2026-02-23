@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM</title>
+  <style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}body{background:#0f172a;color:#e2e8f0;transition:background-color .2s ease,color .2s ease;overflow:hidden;height:100vh;margin:0;font-family:system-ui,-apple-system,sans-serif}.toolbar{position:fixed;left:0;right:0;top:0;z-index:50;display:flex;align-items:center;gap:.375rem;--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1));padding:.5rem 1rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.toolbar .title{margin-right:.5rem;font-size:1rem;line-height:1.5rem;font-weight:600}.toolbar button{cursor:pointer;border-radius:.25rem;border-width:0;background-color:hsla(0,0%,100%,.15);padding:.25rem .625rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.toolbar button:hover{background-color:hsla(0,0%,100%,.25)}.toolbar button.active{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.toolbar button.active:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.toolbar-views{margin-right:auto;display:flex;gap:.125rem}.sidebar{border-right-width:1px;border-color:hsla(0,0%,100%,.1);background-color:rgba(30,41,59,.8);width:288px;min-width:288px}.sidebar,.sidebar-top{display:flex;flex-direction:column}.sidebar-top{gap:.5rem;padding:.75rem}.sidebar-top input[type=text]{width:100%;border-radius:.5rem;border-width:1px;border-color:hsla(0,0%,100%,.1);background-color:hsla(0,0%,100%,.1);padding:.5rem .75rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.sidebar-top input[type=text]::-moz-placeholder{--tw-placeholder-opacity:1;color:rgb(156 163 175/var(--tw-placeholder-opacity,1))}.sidebar-top input[type=text]::placeholder{--tw-placeholder-opacity:1;color:rgb(156 163 175/var(--tw-placeholder-opacity,1))}.sidebar-top input[type=text]{outline:2px solid transparent;outline-offset:2px}.sidebar-top input[type=text]:focus{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1))}.tag-pills{display:flex;flex-wrap:wrap;gap:.25rem}.tag-pill{cursor:pointer;border-radius:9999px;background-color:hsla(0,0%,100%,.1);padding:.125rem .5rem;font-size:.75rem;line-height:1rem;--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1));transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.tag-pill:hover{background-color:hsla(0,0%,100%,.2)}.btn-add,.tag-pill.active{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.btn-add{width:100%;cursor:pointer;border-radius:.5rem;border-width:0;padding-top:.5rem;padding-bottom:.5rem;font-size:.875rem;line-height:1.25rem;font-weight:500;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.btn-add:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.contact-list{flex:1 1 0%;overflow-y:auto}.contact-item{display:flex;cursor:pointer;align-items:center;gap:.5rem;padding:.5rem .75rem;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.contact-item:hover{background-color:hsla(0,0%,100%,.05)}.contact-item.selected{border-left-width:2px;--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1));background-color:rgba(59,130,246,.2)}.contact-item.dimmed{opacity:.3}.contact-avatar{display:flex;height:2rem;width:2rem;flex-shrink:0;align-items:center;justify-content:center;border-radius:9999px;font-size:.75rem;line-height:1rem;font-weight:700;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.contact-info{min-width:0;flex:1 1 0%}.contact-name{font-size:.875rem;line-height:1.25rem;font-weight:500;color:rgb(255 255 255/var(--tw-text-opacity,1))}.contact-name,.contact-tags{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;--tw-text-opacity:1}.contact-tags{font-size:.75rem;line-height:1rem;color:rgb(156 163 175/var(--tw-text-opacity,1))}.reminders-section{border-top-width:1px;border-color:hsla(0,0%,100%,.1);padding:.75rem}.reminders-title{margin-bottom:.5rem;font-size:.75rem;line-height:1rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.reminders-list{display:flex;max-height:9rem;flex-direction:column;gap:.25rem;overflow-y:auto}.reminder-item{display:flex;cursor:pointer;align-items:center;gap:.5rem;border-radius:.25rem;padding:.25rem .5rem;font-size:.75rem;line-height:1rem;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.reminder-item:hover{background-color:hsla(0,0%,100%,.05)}.reminder-icon{flex-shrink:0}.reminder-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.reminder-days{margin-left:auto;flex-shrink:0;--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.graph-view{position:relative;flex:1 1 0%}.zoom-controls{position:absolute;bottom:1rem;right:1rem;display:flex;flex-direction:column;gap:.25rem}.zoom-controls button{display:flex;height:2rem;width:2rem;cursor:pointer;align-items:center;justify-content:center;border-radius:.25rem;border-width:1px;border-color:hsla(0,0%,100%,.1);--tw-bg-opacity:1;background-color:rgb(51 65 85/var(--tw-bg-opacity,1));font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.zoom-controls button:hover{--tw-bg-opacity:1;background-color:rgb(71 85 105/var(--tw-bg-opacity,1))}.graph-node{position:absolute;display:flex;cursor:grab;-webkit-user-select:none;-moz-user-select:none;user-select:none;flex-direction:column;align-items:center;gap:.25rem;transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.2s}.graph-node.dragging{z-index:10;cursor:grabbing}.graph-node.dimmed{opacity:.3}.graph-node.selected .node-avatar{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);--tw-ring-opacity:1;--tw-ring-color:rgb(96 165 250/var(--tw-ring-opacity,1));--tw-ring-offset-width:2px;--tw-ring-offset-color:#0f172a}.node-avatar{display:flex;height:3rem;width:3rem;align-items:center;justify-content:center;border-radius:9999px;font-size:.875rem;line-height:1.25rem;font-weight:700;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1));--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.node-label{max-width:5rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font-size:.75rem;line-height:1rem;--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.list-view{flex:1 1 0%;overflow:auto;padding:1rem}.contact-table{width:100%;font-size:.875rem;line-height:1.25rem;border-collapse:collapse}.contact-table th{border-bottom-width:1px;border-color:hsla(0,0%,100%,.1);padding:.5rem .75rem;text-align:left;font-size:.75rem;line-height:1rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.contact-table td{border-bottom-width:1px;border-color:hsla(0,0%,100%,.05);padding:.625rem .75rem;--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.contact-table tr:hover td{background-color:hsla(0,0%,100%,.05)}.table-tag{display:inline-block;padding:.125rem .375rem;color:rgb(209 213 219/var(--tw-text-opacity,1))}.table-actions button,.table-tag{margin-right:.25rem;border-radius:.25rem;background-color:hsla(0,0%,100%,.1);font-size:.75rem;line-height:1rem;--tw-text-opacity:1}.table-actions button{cursor:pointer;border-width:0;padding:.25rem .5rem;color:rgb(255 255 255/var(--tw-text-opacity,1))}.table-actions button:hover{background-color:hsla(0,0%,100%,.2)}.table-actions .btn-del{background-color:rgba(239,68,68,.2);--tw-text-opacity:1;color:rgb(252 165 165/var(--tw-text-opacity,1))}.table-actions .btn-del:hover{background-color:rgba(239,68,68,.4)}.modal-overlay{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background-color:rgba(0,0,0,.6)}.modal{width:100%;max-width:28rem;border-radius:.75rem;border-width:1px;border-color:hsla(0,0%,100%,.1);--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1));--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.modal-sm{max-width:24rem}.modal-lg{max-width:42rem}.modal-header{display:flex;align-items:center;justify-content:space-between;border-bottom-width:1px;border-color:hsla(0,0%,100%,.1);padding:.75rem 1.25rem}.modal-header span{font-weight:600;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.modal-close{cursor:pointer;border-width:0;background-color:transparent;padding:0;font-size:1.25rem;line-height:1.75rem;line-height:1;--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.modal-close:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.modal-body{display:flex;max-height:60vh;flex-direction:column;gap:.75rem;overflow-y:auto;padding:1rem 1.25rem}.modal-body label{display:flex;flex-direction:column;gap:.25rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.modal-body input[type=date],.modal-body input[type=email],.modal-body input[type=tel],.modal-body input[type=text],.modal-body select,.modal-body textarea{width:100%;border-radius:.5rem;border-width:1px;border-color:hsla(0,0%,100%,.1);background-color:hsla(0,0%,100%,.1);padding:.5rem .75rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1));outline:2px solid transparent;outline-offset:2px}.modal-body input:focus,.modal-body select:focus,.modal-body textarea:focus{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1))}.modal-body .hint{font-size:.75rem;line-height:1rem;--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.modal-footer{display:flex;align-items:center;gap:.5rem;border-top-width:1px;border-color:hsla(0,0%,100%,.1);padding:.75rem 1.25rem}.btn-primary{cursor:pointer;border-radius:.5rem;border-width:0;--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1));padding:.5rem 1rem;font-size:.875rem;line-height:1.25rem;font-weight:500;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.btn-primary:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.btn-secondary{cursor:pointer;border-radius:.5rem;border-width:0;background-color:hsla(0,0%,100%,.1);padding:.5rem 1rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.btn-secondary:hover{background-color:hsla(0,0%,100%,.2)}.btn-danger{cursor:pointer;border-radius:.5rem;border-width:0;--tw-bg-opacity:1;background-color:rgb(239 68 68/var(--tw-bg-opacity,1));padding:.5rem 1rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.btn-danger:hover{--tw-bg-opacity:1;background-color:rgb(220 38 38/var(--tw-bg-opacity,1))}.btn-small{cursor:pointer;border-radius:.25rem;border-width:0;background-color:hsla(0,0%,100%,.1);padding:.25rem .5rem;font-size:.75rem;line-height:1rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.btn-small:hover{background-color:hsla(0,0%,100%,.2)}.custom-dates-header{margin-bottom:.5rem;display:flex;align-items:center;justify-content:space-between}.custom-dates-header span{font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.date-row{margin-bottom:.25rem;display:flex;align-items:center;gap:.5rem}.date-row input{flex:1 1 0%}.date-row .btn-remove-date{cursor:pointer;border-width:0;background-color:transparent;padding:0;font-size:1rem;line-height:1.5rem;line-height:1;--tw-text-opacity:1;color:rgb(248 113 113/var(--tw-text-opacity,1))}.date-row .btn-remove-date:hover{--tw-text-opacity:1;color:rgb(252 165 165/var(--tw-text-opacity,1))}.file-input{width:100%;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.import-preview{max-height:16rem;overflow:auto}.import-preview table{width:100%;font-size:.75rem;line-height:1rem;border-collapse:collapse}.import-preview th{border-bottom-width:1px;border-color:hsla(0,0%,100%,.1);padding:.25rem .5rem;text-align:left;--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.import-preview td{border-bottom-width:1px;border-color:hsla(0,0%,100%,.05);padding:.25rem .5rem;--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.link-mode .toolbar #btn-link{--tw-bg-opacity:1;background-color:rgb(249 115 22/var(--tw-bg-opacity,1))}.link-mode .toolbar #btn-link:hover{--tw-bg-opacity:1;background-color:rgb(234 88 12/var(--tw-bg-opacity,1))}.link-mode .graph-node{cursor:crosshair}.link-hint{position:absolute;top:.5rem;left:50%;z-index:10;--tw-translate-x:-50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));border-radius:9999px;--tw-bg-opacity:1;background-color:rgb(249 115 22/var(--tw-bg-opacity,1));padding:.25rem .75rem;font-size:.875rem;line-height:1.25rem;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1));--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.table{display:table}.hidden{display:none}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.layout{display:flex;position:fixed;top:42px;left:0;right:0;bottom:0}.main-area{flex:1;display:flex;position:relative;overflow:hidden}.canvas{position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;cursor:grab}.canvas.grabbing{cursor:grabbing}#viewport{transform-origin:0 0}#edges,#viewport{position:absolute;top:0;left:0}#edges{overflow:visible;pointer-events:none}#edges line{stroke-width:2;pointer-events:stroke}#edges line:hover{stroke-width:4;cursor:pointer}[data-theme=light] body{background:#f8fafc;color:#0f172a}[data-theme=light] .toolbar{background:#e2e8f0;color:#0f172a}[data-theme=light] .toolbar button{background:#fff;color:#0f172a}[data-theme=light] .toolbar button.active{background:#3b82f6;color:#fff}[data-theme=light] .sidebar{background:#f1f5f9;border-color:#e2e8f0}[data-theme=light] .sidebar-top input[type=text]{background:#fff;border-color:#e2e8f0;color:#0f172a}[data-theme=light] .contact-item:hover{background:rgba(0,0,0,.05)}[data-theme=light] .contact-name{color:#0f172a}[data-theme=light] .node-label{color:#334155}[data-theme=light] .modal{background:#fff;border-color:#e2e8f0}[data-theme=light] .modal-header{border-color:#e2e8f0}[data-theme=light] .modal-header span{color:#0f172a}[data-theme=light] .modal-body label{color:#334155}[data-theme=light] .modal-body input,[data-theme=light] .modal-body select,[data-theme=light] .modal-body textarea{background:#f8fafc;border-color:#e2e8f0;color:#0f172a}[data-theme=light] .modal-footer{border-color:#e2e8f0}[data-theme=light] .contact-table th{color:#64748b;border-color:#e2e8f0}[data-theme=light] .contact-table td{color:#334155;border-color:#f1f5f9}[data-theme=light] .contact-table tr:hover td{background:rgba(0,0,0,.03)}[data-theme=light] .zoom-controls button{background:#fff;border-color:#e2e8f0;color:#0f172a}[data-theme=light] .reminders-section{border-color:#e2e8f0}[data-theme=light] .graph-node.selected .node-avatar{ring-offset-color:#f8fafc}[data-theme=light] .tag-pill{background:#e2e8f0;color:#334155}[data-theme=light] .tag-pill.active{background:#3b82f6;color:#fff}
+  </style>
+</head>
+
+<body>
+  <div class="toolbar">
+    <button id="dashboard-btn" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+    <span class="title">CRM</span>
+    <div class="toolbar-views">
+      <button id="btn-graph" class="active" title="Graph view">Graph</button>
+      <button id="btn-list" title="List view">List</button>
+    </div>
+    <button id="btn-link" title="Link two contacts">Link</button>
+    <button id="btn-import" title="Import contacts">Import</button>
+    <button id="theme-toggle" aria-label="Switch theme" title="Switch theme"></button>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <input type="text" id="search" placeholder="Search contacts..." autocomplete="off">
+        <div id="tag-pills" class="tag-pills"></div>
+        <button id="btn-add" class="btn-add">+ Add Contact</button>
+      </div>
+      <div id="contact-list" class="contact-list"></div>
+      <div class="reminders-section">
+        <div class="reminders-title">Upcoming</div>
+        <div id="reminders" class="reminders-list"></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <div id="graph-view" class="graph-view">
+        <div class="canvas" id="canvas">
+          <div id="viewport">
+            <svg id="edges"></svg>
+            <div id="graph-nodes"></div>
+          </div>
+        </div>
+        <div class="zoom-controls">
+          <button id="btn-zoom-in" title="Zoom in">+</button>
+          <button id="btn-zoom-out" title="Zoom out">&minus;</button>
+          <button id="btn-fit" title="Fit all">Fit</button>
+        </div>
+      </div>
+
+      <div id="list-view" class="list-view" style="display:none">
+        <table class="contact-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Tags</th>
+              <th>Last Contact</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="list-body"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contact-modal" class="modal-overlay" style="display:none">
+    <div class="modal">
+      <div class="modal-header">
+        <span id="modal-title">Add Contact</span>
+        <button class="modal-close" data-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="edit-id">
+        <label>Name<input type="text" id="edit-name" required></label>
+        <label>Email<input type="email" id="edit-email"></label>
+        <label>Phone<input type="tel" id="edit-phone"></label>
+        <label>Birthday<input type="date" id="edit-birthday"></label>
+        <label>Tags <span class="hint">(comma-separated)</span><input type="text" id="edit-tags" placeholder="friend, work"></label>
+        <label>Notes<textarea id="edit-notes" rows="3"></textarea></label>
+        <div id="custom-dates" class="custom-dates">
+          <div class="custom-dates-header">
+            <span>Custom Dates</span>
+            <button type="button" id="btn-add-date" class="btn-small">+ Date</button>
+          </div>
+          <div id="dates-list"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-save-contact" class="btn-primary">Save</button>
+        <button data-close class="btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edge Modal -->
+  <div id="edge-modal" class="modal-overlay" style="display:none">
+    <div class="modal modal-sm">
+      <div class="modal-header">
+        <span id="edge-modal-title">Relationship</span>
+        <button class="modal-close" data-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <input type="hidden" id="edge-id">
+        <label>From<select id="edge-from"></select></label>
+        <label>To<select id="edge-to"></select></label>
+        <label>Type
+          <select id="edge-type">
+            <option value="friend">Friend</option>
+            <option value="colleague">Colleague</option>
+            <option value="family">Family</option>
+            <option value="acquaintance">Acquaintance</option>
+            <option value="mentor">Mentor</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label>Notes<input type="text" id="edge-notes"></label>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-save-edge" class="btn-primary">Save</button>
+        <button id="btn-delete-edge" class="btn-danger" style="display:none">Delete</button>
+        <button data-close class="btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Import Modal -->
+  <div id="import-modal" class="modal-overlay" style="display:none">
+    <div class="modal modal-lg">
+      <div class="modal-header">
+        <span>Import Contacts</span>
+        <button class="modal-close" data-close>&times;</button>
+      </div>
+      <div class="modal-body">
+        <input type="file" id="import-file" accept=".vcf,.csv" class="file-input">
+        <div id="import-preview" class="import-preview"></div>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-import-all" class="btn-primary" style="display:none">Import All</button>
+        <button data-close class="btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+(function () {
+  const KEY = 'spa-theme';
+  const VALID = new Set(['dark', 'light']);
+  let initialized = false;
+
+  function normalize(mode) {
+    return VALID.has(mode) ? mode : null;
+  }
+
+  function readStored() {
+    try {
+      return normalize(localStorage.getItem(KEY));
+    } catch {
+      return null;
+    }
+  }
+
+  function apply(mode) {
+    document.documentElement.dataset.theme = mode;
+    document.documentElement.style.colorScheme = mode;
+  }
+
+  function emit(mode) {
+    window.dispatchEvent(new CustomEvent('themechange', { detail: { mode } }));
+  }
+
+  function get() {
+    return normalize(document.documentElement.dataset.theme) || 'dark';
+  }
+
+  function set(mode, persist = true) {
+    const normalized = normalize(mode) || 'dark';
+    apply(normalized);
+    if (persist) {
+      try {
+        localStorage.setItem(KEY, normalized);
+      } catch {
+        // ignore storage failures
+      }
+    }
+    emit(normalized);
+    return normalized;
+  }
+
+  function init(options = {}) {
+    const fallback = normalize(options.defaultMode) || 'dark';
+    const stored = readStored();
+    const mode = stored || fallback;
+    apply(mode);
+    if (!stored) {
+      try {
+        localStorage.setItem(KEY, mode);
+      } catch {
+        // ignore storage failures
+      }
+    }
+    if (!initialized) {
+      emit(mode);
+      initialized = true;
+    }
+    return mode;
+  }
+
+  function toggle() {
+    return set(get() === 'dark' ? 'light' : 'dark');
+  }
+
+  function mountToggle(button, options = {}) {
+    if (!button) return;
+
+    const darkIcon = options.darkIcon || '☀';
+    const lightIcon = options.lightIcon || '☾';
+
+    const sync = () => {
+      const mode = get();
+      const next = mode === 'dark' ? 'light' : 'dark';
+      button.textContent = mode === 'dark' ? darkIcon : lightIcon;
+      button.setAttribute('aria-label', `Switch to ${next} mode`);
+      button.setAttribute('title', `Switch to ${next} mode`);
+      button.dataset.mode = mode;
+    };
+
+    button.addEventListener('click', () => toggle());
+    window.addEventListener('themechange', sync);
+    sync();
+  }
+
+  window.Theme = {
+    init,
+    get,
+    set,
+    toggle,
+    mountToggle,
+  };
+
+  window.AppNav = {
+    goDashboard() {
+      window.location.href = 'dashboard.html';
+    },
+  };
+})();
+  </script>
+  <script>
+// --- DB ---
+function dbOpen() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open('crm-app', 1);
+    req.onupgradeneeded = () => req.result.createObjectStore('state');
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbGet(db, key) {
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('state').objectStore('state').get(key);
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbPut(db, key, val) {
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('state', 'readwrite').objectStore('state').put(val, key);
+    req.onsuccess = () => resolve();
+    req.onerror = () => reject(req.error);
+  });
+}
+
+// --- State ---
+let db;
+const DEFAULT_STATE = {
+  contacts: {},
+  relationships: {},
+  nextId: 1
+};
+let state = DEFAULT_STATE;
+
+// View state
+let panX = 0, panY = 0, zoom = 1;
+let selectedId = null;
+let activeView = 'graph';
+let linkMode = false;
+let linkFrom = null;
+let searchQuery = '';
+let activeTag = null;
+
+// Relationship type colors
+const EDGE_COLORS = {
+  friend: '#22c55e',
+  colleague: '#3b82f6',
+  family: '#f59e0b',
+  acquaintance: '#8b5cf6',
+  mentor: '#ec4899',
+  other: '#94a3b8'
+};
+
+const AVATAR_COLORS = [
+  '#3b82f6', '#ef4444', '#22c55e', '#f59e0b', '#8b5cf6',
+  '#ec4899', '#14b8a6', '#f97316', '#6366f1', '#06b6d4'
+];
+
+function save() {
+  dbPut(db, 'state', state);
+}
+
+function nextIdStr() {
+  return String(state.nextId++);
+}
+
+// --- Util ---
+function escapeHtml(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function initials(name) {
+  return name.split(/\s+/).map(w => w[0] || '').slice(0, 2).join('').toUpperCase();
+}
+
+function avatarColor(id) {
+  return AVATAR_COLORS[parseInt(id) % AVATAR_COLORS.length];
+}
+
+function daysUntilAnniversary(dateStr) {
+  if (!dateStr) return Infinity;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const d = new Date(dateStr);
+  const next = new Date(today.getFullYear(), d.getMonth(), d.getDate());
+  if (next < today) next.setFullYear(next.getFullYear() + 1);
+  return Math.round((next - today) / 86400000);
+}
+
+function daysSince(dateStr) {
+  if (!dateStr) return Infinity;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const d = new Date(dateStr);
+  return Math.round((today - d) / 86400000);
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  const d = new Date(dateStr);
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
+// --- Filtering ---
+function getFilteredContactIds() {
+  const contacts = Object.values(state.contacts);
+  const q = searchQuery.toLowerCase();
+  return contacts.filter(c => {
+    if (q && !c.name.toLowerCase().includes(q) && !(c.email || '').toLowerCase().includes(q) && !(c.notes || '').toLowerCase().includes(q)) return false;
+    if (activeTag && !(c.tags || []).includes(activeTag)) return false;
+    return true;
+  }).map(c => c.id);
+}
+
+function getAllTags() {
+  const tags = new Set();
+  for (const c of Object.values(state.contacts)) {
+    (c.tags || []).forEach(t => tags.add(t));
+  }
+  return [...tags].sort();
+}
+
+// --- DOM refs ---
+const canvasEl = document.getElementById('canvas');
+const viewportEl = document.getElementById('viewport');
+const edgesSvg = document.getElementById('edges');
+const graphNodesEl = document.getElementById('graph-nodes');
+const contactListEl = document.getElementById('contact-list');
+const tagPillsEl = document.getElementById('tag-pills');
+const remindersEl = document.getElementById('reminders');
+const listBodyEl = document.getElementById('list-body');
+const graphViewEl = document.getElementById('graph-view');
+const listViewEl = document.getElementById('list-view');
+
+// --- Render ---
+function render() {
+  const filtered = getFilteredContactIds();
+  renderSidebar(filtered);
+  renderTagPills();
+  renderReminders();
+  if (activeView === 'graph') {
+    renderGraph(filtered);
+  } else {
+    renderList(filtered);
+  }
+}
+
+function renderSidebar(filtered) {
+  const contacts = Object.values(state.contacts).sort((a, b) => a.name.localeCompare(b.name));
+  contactListEl.innerHTML = '';
+  for (const c of contacts) {
+    const isMatch = filtered.includes(c.id);
+    const div = document.createElement('div');
+    div.className = 'contact-item' + (c.id === selectedId ? ' selected' : '') + (!isMatch ? ' dimmed' : '');
+    div.innerHTML = `
+      <div class="contact-avatar" style="background:${avatarColor(c.id)}">${escapeHtml(initials(c.name))}</div>
+      <div class="contact-info">
+        <div class="contact-name">${escapeHtml(c.name)}</div>
+        <div class="contact-tags">${(c.tags || []).map(t => escapeHtml(t)).join(', ')}</div>
+      </div>
+    `;
+    div.addEventListener('click', () => selectContact(c.id));
+    div.addEventListener('dblclick', () => openEditContact(c.id));
+    contactListEl.appendChild(div);
+  }
+}
+
+function renderTagPills() {
+  const tags = getAllTags();
+  tagPillsEl.innerHTML = '';
+  for (const tag of tags) {
+    const pill = document.createElement('span');
+    pill.className = 'tag-pill' + (tag === activeTag ? ' active' : '');
+    pill.textContent = tag;
+    pill.addEventListener('click', () => {
+      activeTag = activeTag === tag ? null : tag;
+      render();
+    });
+    tagPillsEl.appendChild(pill);
+  }
+}
+
+function renderReminders() {
+  const items = [];
+  for (const c of Object.values(state.contacts)) {
+    if (c.birthday) {
+      const days = daysUntilAnniversary(c.birthday);
+      if (days <= 30) {
+        items.push({ id: c.id, icon: '\uD83C\uDF82', text: `${c.name} — birthday`, days, sort: days });
+      }
+    }
+    for (const d of (c.dates || [])) {
+      const days = daysUntilAnniversary(d.date);
+      if (days <= 30) {
+        items.push({ id: c.id, icon: '\uD83D\uDCC5', text: `${c.name} — ${d.label}`, days, sort: days });
+      }
+    }
+    if (c.lastContact) {
+      const stale = daysSince(c.lastContact);
+      if (stale > 30) {
+        items.push({ id: c.id, icon: '\uD83D\uDCDE', text: `${c.name} — follow up`, days: stale, sort: 0 });
+      }
+    }
+  }
+  items.sort((a, b) => a.sort - b.sort);
+  remindersEl.innerHTML = '';
+  for (const item of items.slice(0, 10)) {
+    const div = document.createElement('div');
+    div.className = 'reminder-item';
+    div.innerHTML = `
+      <span class="reminder-icon">${item.icon}</span>
+      <span class="reminder-text">${escapeHtml(item.text)}</span>
+      <span class="reminder-days">${item.days}d</span>
+    `;
+    div.addEventListener('click', () => selectContact(item.id));
+    remindersEl.appendChild(div);
+  }
+  if (items.length === 0) {
+    remindersEl.innerHTML = '<div class="reminder-item"><span class="reminder-text" style="opacity:0.5">No upcoming events</span></div>';
+  }
+}
+
+function renderGraph(filtered) {
+  graphNodesEl.innerHTML = '';
+  edgesSvg.innerHTML = '';
+  updateTransform();
+
+  // Render edges
+  for (const rel of Object.values(state.relationships)) {
+    const from = state.contacts[rel.from];
+    const to = state.contacts[rel.to];
+    if (!from || !to) continue;
+
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', from.x + 24);
+    line.setAttribute('y1', from.y + 24);
+    line.setAttribute('x2', to.x + 24);
+    line.setAttribute('y2', to.y + 24);
+    line.setAttribute('stroke', EDGE_COLORS[rel.type] || EDGE_COLORS.other);
+    line.style.pointerEvents = 'stroke';
+    line.addEventListener('dblclick', (e) => {
+      e.stopPropagation();
+      openEditEdge(rel.id);
+    });
+    edgesSvg.appendChild(line);
+  }
+
+  // Render nodes
+  for (const c of Object.values(state.contacts)) {
+    const isMatch = filtered.includes(c.id);
+    const el = document.createElement('div');
+    el.className = 'graph-node' + (c.id === selectedId ? ' selected' : '') + (!isMatch ? ' dimmed' : '');
+    el.style.left = c.x + 'px';
+    el.style.top = c.y + 'px';
+    el.dataset.id = c.id;
+    el.innerHTML = `
+      <div class="node-avatar" style="background:${c.color || avatarColor(c.id)}">${escapeHtml(initials(c.name))}</div>
+      <div class="node-label">${escapeHtml(c.name)}</div>
+    `;
+
+    el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (linkMode) {
+        handleLinkClick(c.id);
+      } else {
+        selectContact(c.id);
+      }
+    });
+    el.addEventListener('dblclick', (e) => {
+      e.stopPropagation();
+      openEditContact(c.id);
+    });
+
+    setupNodeDrag(el, c);
+    graphNodesEl.appendChild(el);
+  }
+
+  // Link mode hint
+  const existing = canvasEl.querySelector('.link-hint');
+  if (existing) existing.remove();
+  if (linkMode) {
+    const hint = document.createElement('div');
+    hint.className = 'link-hint';
+    hint.textContent = linkFrom ? 'Click second contact' : 'Click first contact';
+    canvasEl.appendChild(hint);
+  }
+}
+
+function renderList(filtered) {
+  const contacts = Object.values(state.contacts)
+    .filter(c => filtered.includes(c.id))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  listBodyEl.innerHTML = '';
+  for (const c of contacts) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${escapeHtml(c.name)}</td>
+      <td>${escapeHtml(c.email || '')}</td>
+      <td>${escapeHtml(c.phone || '')}</td>
+      <td>${(c.tags || []).map(t => `<span class="table-tag">${escapeHtml(t)}</span>`).join('')}</td>
+      <td>${c.lastContact ? formatDate(c.lastContact) : ''}</td>
+      <td class="table-actions">
+        <button class="btn-edit">Edit</button>
+        <button class="btn-del">Delete</button>
+      </td>
+    `;
+    tr.querySelector('.btn-edit').addEventListener('click', () => openEditContact(c.id));
+    tr.querySelector('.btn-del').addEventListener('click', () => {
+      if (confirm(`Delete ${c.name}?`)) deleteContact(c.id);
+    });
+    listBodyEl.appendChild(tr);
+  }
+}
+
+// --- Transform ---
+function updateTransform() {
+  viewportEl.style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
+}
+
+function drawEdges() {
+  edgesSvg.innerHTML = '';
+  for (const rel of Object.values(state.relationships)) {
+    const from = state.contacts[rel.from];
+    const to = state.contacts[rel.to];
+    if (!from || !to) continue;
+
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', from.x + 24);
+    line.setAttribute('y1', from.y + 24);
+    line.setAttribute('x2', to.x + 24);
+    line.setAttribute('y2', to.y + 24);
+    line.setAttribute('stroke', EDGE_COLORS[rel.type] || EDGE_COLORS.other);
+    line.style.pointerEvents = 'stroke';
+    line.addEventListener('dblclick', (e) => {
+      e.stopPropagation();
+      openEditEdge(rel.id);
+    });
+    edgesSvg.appendChild(line);
+  }
+}
+
+// --- Node dragging ---
+function setupNodeDrag(el, contact) {
+  let startX, startY, origX, origY, moved;
+
+  el.addEventListener('mousedown', (e) => {
+    if (linkMode) return;
+    if (e.button !== 0) return;
+    e.stopPropagation();
+    e.preventDefault();
+
+    startX = e.clientX;
+    startY = e.clientY;
+    origX = contact.x;
+    origY = contact.y;
+    moved = false;
+    el.classList.add('dragging');
+
+    const onMove = (e) => {
+      const dx = (e.clientX - startX) / zoom;
+      const dy = (e.clientY - startY) / zoom;
+      if (Math.abs(dx) > 3 || Math.abs(dy) > 3) moved = true;
+      contact.x = origX + dx;
+      contact.y = origY + dy;
+      el.style.left = contact.x + 'px';
+      el.style.top = contact.y + 'px';
+      drawEdges();
+    };
+
+    const onUp = () => {
+      el.classList.remove('dragging');
+      if (moved) {
+        contact.x = Math.round(contact.x);
+        contact.y = Math.round(contact.y);
+        save();
+      }
+      window.removeEventListener('mousemove', onMove);
+      window.removeEventListener('mouseup', onUp);
+    };
+
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('mouseup', onUp);
+  });
+}
+
+// --- Canvas pan ---
+{
+  let panning = false, startX, startY, origPanX, origPanY;
+
+  canvasEl.addEventListener('mousedown', (e) => {
+    if (e.target !== canvasEl && !e.target.closest('#edges')) return;
+    panning = true;
+    startX = e.clientX;
+    startY = e.clientY;
+    origPanX = panX;
+    origPanY = panY;
+    canvasEl.classList.add('grabbing');
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!panning) return;
+    panX = origPanX + (e.clientX - startX);
+    panY = origPanY + (e.clientY - startY);
+    updateTransform();
+  });
+
+  window.addEventListener('mouseup', () => {
+    panning = false;
+    canvasEl.classList.remove('grabbing');
+  });
+
+  canvasEl.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? 0.9 : 1.1;
+    const rect = canvasEl.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+
+    panX = mx - (mx - panX) * delta;
+    panY = my - (my - panY) * delta;
+    zoom *= delta;
+    zoom = Math.max(0.2, Math.min(3, zoom));
+    updateTransform();
+  }, { passive: false });
+}
+
+// --- Actions ---
+function selectContact(id) {
+  selectedId = selectedId === id ? null : id;
+  render();
+}
+
+function deleteContact(id) {
+  delete state.contacts[id];
+  // Remove relationships involving this contact
+  for (const [rid, rel] of Object.entries(state.relationships)) {
+    if (rel.from === id || rel.to === id) delete state.relationships[rid];
+  }
+  if (selectedId === id) selectedId = null;
+  save();
+  render();
+}
+
+// --- Contact Modal ---
+function openAddContact() {
+  document.getElementById('modal-title').textContent = 'Add Contact';
+  document.getElementById('edit-id').value = '';
+  document.getElementById('edit-name').value = '';
+  document.getElementById('edit-email').value = '';
+  document.getElementById('edit-phone').value = '';
+  document.getElementById('edit-birthday').value = '';
+  document.getElementById('edit-tags').value = '';
+  document.getElementById('edit-notes').value = '';
+  document.getElementById('dates-list').innerHTML = '';
+  showModal('contact-modal');
+  document.getElementById('edit-name').focus();
+}
+
+function openEditContact(id) {
+  const c = state.contacts[id];
+  if (!c) return;
+  document.getElementById('modal-title').textContent = 'Edit Contact';
+  document.getElementById('edit-id').value = id;
+  document.getElementById('edit-name').value = c.name;
+  document.getElementById('edit-email').value = c.email || '';
+  document.getElementById('edit-phone').value = c.phone || '';
+  document.getElementById('edit-birthday').value = c.birthday || '';
+  document.getElementById('edit-tags').value = (c.tags || []).join(', ');
+  document.getElementById('edit-notes').value = c.notes || '';
+
+  const datesList = document.getElementById('dates-list');
+  datesList.innerHTML = '';
+  for (const d of (c.dates || [])) {
+    addDateRow(d.label, d.date);
+  }
+
+  showModal('contact-modal');
+}
+
+function saveContact() {
+  const id = document.getElementById('edit-id').value;
+  const name = document.getElementById('edit-name').value.trim();
+  if (!name) return;
+
+  const email = document.getElementById('edit-email').value.trim();
+  const phone = document.getElementById('edit-phone').value.trim();
+  const birthday = document.getElementById('edit-birthday').value;
+  const tagsStr = document.getElementById('edit-tags').value;
+  const tags = tagsStr.split(',').map(t => t.trim()).filter(Boolean);
+  const notes = document.getElementById('edit-notes').value.trim();
+
+  const dates = [];
+  for (const row of document.querySelectorAll('#dates-list .date-row')) {
+    const label = row.querySelector('.date-label').value.trim();
+    const date = row.querySelector('.date-value').value;
+    if (label && date) dates.push({ label, date });
+  }
+
+  if (id && state.contacts[id]) {
+    const c = state.contacts[id];
+    c.name = name;
+    c.email = email;
+    c.phone = phone;
+    c.birthday = birthday;
+    c.tags = tags;
+    c.notes = notes;
+    c.dates = dates;
+  } else {
+    const newId = nextIdStr();
+    const rect = canvasEl.getBoundingClientRect();
+    const cx = (rect.width / 2 - panX) / zoom;
+    const cy = (rect.height / 2 - panY) / zoom;
+    const angle = Math.random() * Math.PI * 2;
+    const dist = 50 + Math.random() * 100;
+
+    state.contacts[newId] = {
+      id: newId,
+      name, email, phone, birthday, tags, notes, dates,
+      lastContact: new Date().toISOString().slice(0, 10),
+      x: Math.round(cx + Math.cos(angle) * dist),
+      y: Math.round(cy + Math.sin(angle) * dist),
+      color: AVATAR_COLORS[parseInt(newId) % AVATAR_COLORS.length],
+      createdAt: new Date().toISOString()
+    };
+    selectedId = newId;
+  }
+
+  save();
+  hideModal('contact-modal');
+  render();
+}
+
+function addDateRow(label, date) {
+  const datesList = document.getElementById('dates-list');
+  const row = document.createElement('div');
+  row.className = 'date-row';
+  row.innerHTML = `
+    <input type="text" class="date-label" placeholder="Label" value="${escapeHtml(label || '')}">
+    <input type="date" class="date-value" value="${date || ''}">
+    <button type="button" class="btn-remove-date">&times;</button>
+  `;
+  row.querySelector('.btn-remove-date').addEventListener('click', () => row.remove());
+  datesList.appendChild(row);
+}
+
+// --- Edge Modal ---
+function openAddEdge(fromId, toId) {
+  document.getElementById('edge-modal-title').textContent = 'New Relationship';
+  document.getElementById('edge-id').value = '';
+  populateEdgeSelects(fromId, toId);
+  document.getElementById('edge-type').value = 'friend';
+  document.getElementById('edge-notes').value = '';
+  document.getElementById('btn-delete-edge').style.display = 'none';
+  showModal('edge-modal');
+}
+
+function openEditEdge(id) {
+  const rel = state.relationships[id];
+  if (!rel) return;
+  document.getElementById('edge-modal-title').textContent = 'Edit Relationship';
+  document.getElementById('edge-id').value = id;
+  populateEdgeSelects(rel.from, rel.to);
+  document.getElementById('edge-type').value = rel.type;
+  document.getElementById('edge-notes').value = rel.notes || '';
+  document.getElementById('btn-delete-edge').style.display = '';
+  showModal('edge-modal');
+}
+
+function populateEdgeSelects(fromId, toId) {
+  const contacts = Object.values(state.contacts).sort((a, b) => a.name.localeCompare(b.name));
+  const opts = contacts.map(c => `<option value="${c.id}">${escapeHtml(c.name)}</option>`).join('');
+  document.getElementById('edge-from').innerHTML = opts;
+  document.getElementById('edge-to').innerHTML = opts;
+  if (fromId) document.getElementById('edge-from').value = fromId;
+  if (toId) document.getElementById('edge-to').value = toId;
+}
+
+function saveEdge() {
+  const id = document.getElementById('edge-id').value;
+  const from = document.getElementById('edge-from').value;
+  const to = document.getElementById('edge-to').value;
+  const type = document.getElementById('edge-type').value;
+  const notes = document.getElementById('edge-notes').value.trim();
+
+  if (from === to) return;
+
+  if (id && state.relationships[id]) {
+    const rel = state.relationships[id];
+    rel.from = from;
+    rel.to = to;
+    rel.type = type;
+    rel.notes = notes;
+  } else {
+    const newId = nextIdStr();
+    state.relationships[newId] = { id: newId, from, to, type, notes };
+  }
+
+  save();
+  hideModal('edge-modal');
+  render();
+}
+
+function deleteEdge() {
+  const id = document.getElementById('edge-id').value;
+  if (id && state.relationships[id]) {
+    delete state.relationships[id];
+    save();
+    hideModal('edge-modal');
+    render();
+  }
+}
+
+// --- Link Mode ---
+function toggleLinkMode() {
+  linkMode = !linkMode;
+  linkFrom = null;
+  document.body.classList.toggle('link-mode', linkMode);
+  render();
+}
+
+function handleLinkClick(id) {
+  if (!linkFrom) {
+    linkFrom = id;
+    render();
+  } else {
+    if (linkFrom !== id) {
+      openAddEdge(linkFrom, id);
+    }
+    linkMode = false;
+    linkFrom = null;
+    document.body.classList.remove('link-mode');
+  }
+}
+
+// --- Modal helpers ---
+function showModal(id) {
+  document.getElementById(id).style.display = '';
+}
+
+function hideModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+// Close modals on overlay click or close button
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.style.display = 'none';
+  });
+  overlay.querySelectorAll('[data-close]').forEach(btn => {
+    btn.addEventListener('click', () => overlay.style.display = 'none');
+  });
+});
+
+// --- Import ---
+function openImport() {
+  document.getElementById('import-file').value = '';
+  document.getElementById('import-preview').innerHTML = '';
+  document.getElementById('btn-import-all').style.display = 'none';
+  showModal('import-modal');
+}
+
+let pendingImport = [];
+
+document.getElementById('import-file').addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = () => {
+    const text = reader.result;
+    if (file.name.endsWith('.vcf')) {
+      pendingImport = parseVCard(text);
+    } else if (file.name.endsWith('.csv')) {
+      pendingImport = parseCSV(text);
+    } else {
+      pendingImport = [];
+    }
+    renderImportPreview();
+  };
+  reader.readAsText(file);
+});
+
+function parseVCard(text) {
+  const contacts = [];
+  const cards = text.split('BEGIN:VCARD');
+
+  for (const card of cards) {
+    if (!card.trim()) continue;
+    // Unfold lines (RFC 2425)
+    const unfolded = card.replace(/\r?\n[ \t]/g, '');
+    const lines = unfolded.split(/\r?\n/);
+
+    const c = { name: '', email: '', phone: '', birthday: '', notes: '' };
+
+    for (const line of lines) {
+      const upper = line.toUpperCase();
+      if (upper.startsWith('FN')) {
+        c.name = extractValue(line);
+      } else if (upper.startsWith('EMAIL')) {
+        c.email = extractValue(line);
+      } else if (upper.startsWith('TEL')) {
+        c.phone = extractValue(line);
+      } else if (upper.startsWith('BDAY')) {
+        c.birthday = parseBday(extractValue(line));
+      } else if (upper.startsWith('NOTE')) {
+        c.notes = extractValue(line);
+      }
+    }
+
+    if (c.name) contacts.push(c);
+  }
+  return contacts;
+}
+
+function extractValue(line) {
+  const idx = line.indexOf(':');
+  return idx >= 0 ? line.slice(idx + 1).trim() : '';
+}
+
+function parseBday(val) {
+  // Handle YYYYMMDD or YYYY-MM-DD
+  val = val.replace(/[^0-9-]/g, '');
+  if (/^\d{8}$/.test(val)) {
+    return val.slice(0, 4) + '-' + val.slice(4, 6) + '-' + val.slice(6, 8);
+  }
+  if (/^\d{4}-\d{2}-\d{2}$/.test(val)) return val;
+  return '';
+}
+
+function parseCSV(text) {
+  const lines = text.split(/\r?\n/).filter(l => l.trim());
+  if (lines.length < 2) return [];
+
+  const headers = parseCSVRow(lines[0]).map(h => h.toLowerCase().trim());
+
+  // Fuzzy column mapping
+  const map = {};
+  const mappings = {
+    name: ['name', 'full name', 'display name', 'fullname', 'displayname'],
+    email: ['email', 'e-mail', 'email address', 'mail'],
+    phone: ['phone', 'telephone', 'tel', 'mobile', 'cell', 'phone number'],
+    birthday: ['birthday', 'bday', 'birth date', 'birthdate', 'date of birth', 'dob'],
+    notes: ['notes', 'note', 'description', 'comments']
+  };
+
+  for (const [field, aliases] of Object.entries(mappings)) {
+    const idx = headers.findIndex(h => aliases.includes(h));
+    if (idx >= 0) map[field] = idx;
+  }
+
+  if (map.name === undefined) {
+    // Try first+last
+    const firstIdx = headers.findIndex(h => ['first name', 'firstname', 'first', 'given name'].includes(h));
+    const lastIdx = headers.findIndex(h => ['last name', 'lastname', 'last', 'surname', 'family name'].includes(h));
+    if (firstIdx >= 0) {
+      map._first = firstIdx;
+      map._last = lastIdx;
+    } else {
+      map.name = 0; // fallback to first column
+    }
+  }
+
+  const contacts = [];
+  for (let i = 1; i < lines.length; i++) {
+    const row = parseCSVRow(lines[i]);
+    let name = '';
+    if (map.name !== undefined) {
+      name = (row[map.name] || '').trim();
+    } else if (map._first !== undefined) {
+      const first = (row[map._first] || '').trim();
+      const last = map._last >= 0 ? (row[map._last] || '').trim() : '';
+      name = (first + ' ' + last).trim();
+    }
+    if (!name) continue;
+
+    contacts.push({
+      name,
+      email: (map.email !== undefined ? row[map.email] : '') || '',
+      phone: (map.phone !== undefined ? row[map.phone] : '') || '',
+      birthday: (map.birthday !== undefined ? parseBday(row[map.birthday] || '') : ''),
+      notes: (map.notes !== undefined ? row[map.notes] : '') || ''
+    });
+  }
+  return contacts;
+}
+
+function parseCSVRow(line) {
+  const fields = [];
+  let current = '';
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (inQuotes) {
+      if (ch === '"') {
+        if (i + 1 < line.length && line[i + 1] === '"') {
+          current += '"';
+          i++;
+        } else {
+          inQuotes = false;
+        }
+      } else {
+        current += ch;
+      }
+    } else {
+      if (ch === '"') {
+        inQuotes = true;
+      } else if (ch === ',') {
+        fields.push(current);
+        current = '';
+      } else {
+        current += ch;
+      }
+    }
+  }
+  fields.push(current);
+  return fields;
+}
+
+function renderImportPreview() {
+  const preview = document.getElementById('import-preview');
+  if (pendingImport.length === 0) {
+    preview.innerHTML = '<p style="color:#94a3b8">No contacts found in file.</p>';
+    document.getElementById('btn-import-all').style.display = 'none';
+    return;
+  }
+
+  let html = `<p style="color:#94a3b8;margin-bottom:0.5rem">${pendingImport.length} contact(s) found</p>`;
+  html += '<table><thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Birthday</th></tr></thead><tbody>';
+  for (const c of pendingImport) {
+    html += `<tr><td>${escapeHtml(c.name)}</td><td>${escapeHtml(c.email)}</td><td>${escapeHtml(c.phone)}</td><td>${escapeHtml(c.birthday)}</td></tr>`;
+  }
+  html += '</tbody></table>';
+  preview.innerHTML = html;
+  document.getElementById('btn-import-all').style.display = '';
+}
+
+function importAll() {
+  if (pendingImport.length === 0) return;
+
+  const rect = canvasEl.getBoundingClientRect();
+  const cx = (rect.width / 2 - panX) / zoom;
+  const cy = (rect.height / 2 - panY) / zoom;
+  const cols = Math.ceil(Math.sqrt(pendingImport.length));
+  const spacing = 120;
+
+  for (let i = 0; i < pendingImport.length; i++) {
+    const c = pendingImport[i];
+    const col = i % cols;
+    const row = Math.floor(i / cols);
+    const id = nextIdStr();
+
+    const tags = (c.tags || []).slice();
+    if (!tags.includes('imported')) tags.push('imported');
+
+    state.contacts[id] = {
+      id,
+      name: c.name,
+      email: c.email || '',
+      phone: c.phone || '',
+      birthday: c.birthday || '',
+      tags,
+      notes: c.notes || '',
+      dates: [],
+      lastContact: new Date().toISOString().slice(0, 10),
+      x: Math.round(cx + (col - cols / 2) * spacing),
+      y: Math.round(cy + (row - cols / 2) * spacing),
+      color: AVATAR_COLORS[parseInt(id) % AVATAR_COLORS.length],
+      createdAt: new Date().toISOString()
+    };
+  }
+
+  pendingImport = [];
+  save();
+  hideModal('import-modal');
+  render();
+}
+
+// --- View Toggle ---
+function switchView(view) {
+  activeView = view;
+  graphViewEl.style.display = view === 'graph' ? '' : 'none';
+  listViewEl.style.display = view === 'list' ? '' : 'none';
+  document.getElementById('btn-graph').classList.toggle('active', view === 'graph');
+  document.getElementById('btn-list').classList.toggle('active', view === 'list');
+  render();
+}
+
+// --- Zoom controls ---
+document.getElementById('btn-zoom-in').addEventListener('click', () => {
+  zoom = Math.min(3, zoom * 1.2);
+  updateTransform();
+});
+
+document.getElementById('btn-zoom-out').addEventListener('click', () => {
+  zoom = Math.max(0.2, zoom / 1.2);
+  updateTransform();
+});
+
+document.getElementById('btn-fit').addEventListener('click', () => {
+  const nodes = Object.values(state.contacts);
+  if (nodes.length === 0) return;
+
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  nodes.forEach(n => {
+    minX = Math.min(minX, n.x);
+    minY = Math.min(minY, n.y);
+    maxX = Math.max(maxX, n.x + 80);
+    maxY = Math.max(maxY, n.y + 70);
+  });
+
+  const rect = canvasEl.getBoundingClientRect();
+  const padding = 80;
+  const w = maxX - minX + padding * 2;
+  const h = maxY - minY + padding * 2;
+  zoom = Math.min(rect.width / w, rect.height / h, 1.5);
+  panX = (rect.width - w * zoom) / 2 - minX * zoom + padding * zoom;
+  panY = (rect.height - h * zoom) / 2 - minY * zoom + padding * zoom;
+  updateTransform();
+  drawEdges();
+});
+
+// --- Toolbar events ---
+document.getElementById('btn-graph').addEventListener('click', () => switchView('graph'));
+document.getElementById('btn-list').addEventListener('click', () => switchView('list'));
+document.getElementById('btn-link').addEventListener('click', toggleLinkMode);
+document.getElementById('btn-import').addEventListener('click', openImport);
+document.getElementById('btn-add').addEventListener('click', openAddContact);
+document.getElementById('btn-save-contact').addEventListener('click', saveContact);
+document.getElementById('btn-save-edge').addEventListener('click', saveEdge);
+document.getElementById('btn-delete-edge').addEventListener('click', deleteEdge);
+document.getElementById('btn-import-all').addEventListener('click', importAll);
+document.getElementById('btn-add-date').addEventListener('click', () => addDateRow('', ''));
+
+// Search
+document.getElementById('search').addEventListener('input', (e) => {
+  searchQuery = e.target.value;
+  render();
+});
+
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    if (linkMode) {
+      linkMode = false;
+      linkFrom = null;
+      document.body.classList.remove('link-mode');
+      render();
+    }
+    document.querySelectorAll('.modal-overlay').forEach(m => m.style.display = 'none');
+  }
+});
+
+// --- Init ---
+(async () => {
+  Theme.init({ defaultMode: 'dark' });
+  const dashboardBtn = document.getElementById('dashboard-btn');
+  if (dashboardBtn) {
+    dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+  }
+  Theme.mountToggle(document.getElementById('theme-toggle'));
+  db = await dbOpen();
+  const saved = await dbGet(db, 'state');
+  if (saved) {
+    state = saved;
+  }
+
+  // Center viewport
+  const rect = canvasEl.getBoundingClientRect();
+  panX = rect.width / 2;
+  panY = rect.height / 2;
+
+  render();
+})();
+  </script>
+</body>
+
+</html>

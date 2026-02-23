@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagram</title>
+  <style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}body{margin:0;background:radial-gradient(circle at 20% 10%,#dff6ff 0,var(--bg) 40%,#e2e8f0 100%);color:var(--text);font-family:IBM Plex Sans,Segoe UI,sans-serif}.app{display:grid;height:100vh;grid-template-columns:300px 1fr 360px;grid-template-rows:auto 1fr;gap:0}.topbar{grid-column:span 3/span 3;display:flex;align-items:center;gap:1rem;border-bottom-width:1px;padding:.75rem 1.5rem;border-color:var(--line);background:linear-gradient(120deg,#fff,#ecfeff 60%,#f0f9ff)}.topbar h1{font-size:1.5rem;line-height:2rem;font-weight:600;letter-spacing:-.025em;font-family:Space Grotesk,Segoe UI,sans-serif}.topbar h1,.topbar p{margin:0}.topbar p{font-size:.875rem;line-height:1.25rem;color:var(--muted)}.topbar-actions{margin-left:auto;display:flex;gap:.5rem}.sidebar{overflow-y:auto;border-right-width:1px;padding:1rem;border-color:var(--line);background:color-mix(in srgb,var(--panel) 90%,#f8fafc)}.sidebar.right{border-right-width:0;border-left-width:1px}.sidebar section{margin-bottom:1.25rem;border-radius:.75rem;border-width:1px;padding:.75rem;border-color:#dbe5ef;background:#fff}.sidebar h2{margin:0 0 .5rem;font-weight:600;text-transform:uppercase;letter-spacing:.025em;color:#334155}.muted,.sidebar h2{font-size:.875rem;line-height:1.25rem}.muted{color:var(--muted)}.btn{cursor:pointer;border-radius:.5rem;border-width:1px;padding:.375rem .75rem;font-size:.875rem;line-height:1.25rem;border-color:#c9d6e3;background:#f8fafc}.btn:hover{background:#f1f5f9}.btn-theme{font-size:1rem;line-height:1}.btn-danger{color:var(--danger);border-color:#fecaca;background:#fef2f2}.service-palette{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}.service-chip{cursor:grab;border-radius:.5rem;border-width:1px;padding:.5rem;font-size:.875rem;line-height:1.25rem;background:#f8fafc;border-color:#d7e2ee}.service-chip:active{cursor:grabbing}.meta-grid{margin-bottom:.75rem;display:grid;gap:.25rem;grid-template-columns:48px 1fr}.meta-grid input{border-radius:.25rem;border-width:1px;padding:.25rem .5rem;border-color:#d2dce8}.button-row{margin-bottom:.5rem;display:flex;gap:.5rem}.selection-panel{min-height:74px;border-radius:.5rem;border-width:1px;padding:.5rem;font-size:.875rem;line-height:1.25rem;border-color:#dde6f0;background:#f8fafc}.selection-panel input,.selection-panel select{margin-bottom:.5rem;width:100%;border-radius:.25rem;border-width:1px;padding:.375rem .5rem;border-color:#d2dce8;background:#fff}.workspace-wrap{padding:1rem}.workspace{position:relative;height:100%;overflow:hidden;border-radius:1rem;border-width:1px;outline:2px solid transparent;outline-offset:2px;border-color:#c9d6e3;background-image:linear-gradient(90deg,rgba(15,23,42,.05) 1px,transparent 0),linear-gradient(180deg,rgba(15,23,42,.05) 1px,transparent 0);background-size:24px 24px;background-color:#fbfdff}.workspace.drag-over{background-color:#f0fdfa}.edge-layer{pointer-events:none;height:100%;width:100%}.edge-layer,.node-layer{position:absolute;inset:0}.\!node,.node{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;border-radius:.75rem;border-width:1px;padding:.75rem}.\!node{width:228px!important;min-height:100px!important;background:#fff!important;box-shadow:0 10px 18px rgba(15,23,42,.08)!important;border-width:2px!important}.node{width:228px;min-height:100px;background:#fff;box-shadow:0 10px 18px rgba(15,23,42,.08);border-width:2px}.\!node.selected{outline:3px solid #22d3ee66!important}.node.selected{outline:3px solid #22d3ee66}.\!node.linking{box-shadow:0 0 0 3px rgba(20,184,166,.25),0 10px 18px rgba(15,23,42,.08)!important}.node.linking{box-shadow:0 0 0 3px rgba(20,184,166,.25),0 10px 18px rgba(15,23,42,.08)}.node-header{display:flex;align-items:center;gap:.5rem;cursor:grab;-webkit-user-select:none;-moz-user-select:none;user-select:none}.node-header:active{cursor:grabbing}.node-title{font-size:.875rem;line-height:1.25rem;font-weight:600}.node-toolbar{margin-top:.75rem;display:flex;align-items:center;gap:.5rem}.node-toolbar-spacer{flex:1 1 0%}.node-actions{margin-left:auto;display:flex;gap:.25rem}.node-action{height:1.5rem;width:1.5rem;cursor:pointer;border-radius:.25rem;border-width:1px;font-size:13px;line-height:1;border-color:#d6dfeb;background:#f8fafc;color:#334155}.node-subtitle{color:#475569}.node-subtitle,.node-type{margin-top:.5rem;font-size:.75rem;line-height:1rem}.node-type{display:inline-block;border-radius:9999px;padding:.125rem .5rem;background:#e2e8f0}.port{cursor:pointer;border-radius:.375rem;border-width:1px;padding:.125rem .375rem;font-size:10px;text-transform:uppercase;letter-spacing:.025em;border-color:#bfdbfe;background:#eff6ff;color:#1d4ed8}.port:hover{background:#dbeafe}.connect-hint{position:absolute;bottom:.75rem;left:.75rem;border-radius:.5rem;padding:.375rem .75rem;font-size:.875rem;line-height:1.25rem;background:#0f766e;color:#f0fdfa}.hidden{display:none}.tab-row{margin-bottom:.5rem;display:flex;gap:.5rem}.tab{cursor:pointer;border-radius:.25rem;border-width:1px;padding:.25rem .5rem;font-size:.75rem;line-height:1rem;border-color:#d3dfeb;background:#f8fafc}.tab.active{background:#0f766e;border-color:#0f766e;color:#fff}.code-output{overflow:auto;border-radius:.5rem;border-width:1px;padding:.5rem;font-size:.75rem;line-height:1rem;height:320px;border-color:#dbe4ef;background:#0f172a;color:#e2e8f0;white-space:pre}.insights{margin:0;padding-left:1rem;font-size:.875rem;line-height:1.25rem}.insights li{margin-bottom:.25rem}.legend{margin:0;list-style-type:none;padding:0;font-size:.875rem;line-height:1.25rem}.legend li{margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}.legend-dot{display:inline-block;height:.75rem;width:.75rem;border-radius:9999px}.modal{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center}.modal-backdrop{position:absolute;inset:0;background:rgba(15,23,42,.52);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}.modal-card{position:relative;width:min(92vw,420px);border-radius:.75rem;border-width:1px;padding:1rem;border-color:#cbd5e1;background:#fff;box-shadow:0 16px 36px rgba(2,6,23,.22)}.modal-card h2{margin:0 0 .5rem;font-size:1.125rem;line-height:1.75rem;font-weight:600}.modal-card input{margin-top:.25rem;width:100%;border-radius:.5rem;border-width:1px;padding:.5rem;border-color:#cbd5e1}.modal-actions{margin-top:.75rem;display:flex;justify-content:flex-end;gap:.5rem}@media (max-width:1260px){.app{grid-template-columns:260px 1fr;grid-template-rows:auto 1fr auto}.sidebar.right{border-left-width:0;border-top-width:1px;max-height:280px}.sidebar.right,.topbar{grid-column:span 2/span 2}}@media (max-width:880px){.app{display:flex;height:auto;min-height:100vh;flex-direction:column}.topbar{flex-wrap:wrap}.workspace-wrap{height:60vh}.sidebar{border-left-width:0;border-right-width:0;border-bottom-width:1px}.sidebar.right{border-top-width:0;max-height:none}}.hidden{display:none}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}:root{--bg:#eef3f8;--panel:#fff;--text:#0f172a;--muted:#64748b;--line:#cbd5e1;--accent:#0f766e;--danger:#b91c1c}[data-theme=dark]{--bg:#0b1220;--panel:#111827;--text:#e2e8f0;--muted:#94a3b8;--line:#334155;--accent:#14b8a6;--danger:#f87171}[data-theme=dark] .topbar{background:linear-gradient(120deg,#111827,#0f172a 60%,#0b1220)}[data-theme=dark] .modal-card,[data-theme=dark] .sidebar section{background:#111827;border-color:#334155}[data-theme=dark] .workspace{background-color:#0f172a;background-image:linear-gradient(90deg,rgba(148,163,184,.12) 1px,transparent 0),linear-gradient(180deg,rgba(148,163,184,.12) 1px,transparent 0)}[data-theme=dark] .btn{background:#1e293b;border-color:#334155;color:#e2e8f0}[data-theme=dark] .btn:hover{background:#334155}[data-theme=dark] .node-action,[data-theme=dark] .selection-panel,[data-theme=dark] .selection-panel input,[data-theme=dark] .selection-panel select,[data-theme=dark] .service-chip{background:#1e293b;border-color:#334155;color:#e2e8f0}[data-theme=dark] .node{background:#0f172a}
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1>Diagram</h1>
+      <p>Architecture Diagram Builder</p>
+      <div class="topbar-actions">
+        <button id="dashboard-btn" class="btn btn-theme" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+        <button id="theme-toggle" class="btn btn-theme" aria-label="Switch theme" title="Switch theme"></button>
+        <button id="connect-mode-btn" class="btn">Link: None</button>
+        <button id="auto-layout-btn" class="btn">Auto Layout</button>
+        <button id="clear-btn" class="btn btn-danger">Clear</button>
+      </div>
+    </header>
+
+    <aside class="sidebar left">
+      <section>
+        <h2>Service Palette</h2>
+        <p class="muted">Drag a service into the canvas or click to add.</p>
+        <div id="service-palette" class="service-palette"></div>
+      </section>
+
+      <section>
+        <h2>Diagram</h2>
+        <div class="meta-grid">
+          <label for="diagram-name">Name</label>
+          <input id="diagram-name" type="text" value="Untitled Architecture">
+        </div>
+        <div class="button-row">
+          <button id="export-json-btn" class="btn">Export JSON</button>
+          <button id="import-json-btn" class="btn">Import JSON</button>
+          <input id="import-json-file" type="file" accept="application/json" hidden>
+        </div>
+        <div class="button-row">
+          <button id="save-template-btn" class="btn">Save Template</button>
+          <button id="load-template-btn" class="btn">Load Template</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Selection</h2>
+        <div id="selection-panel" class="selection-panel muted">Select a node or edge to edit details.</div>
+      </section>
+    </aside>
+
+    <main class="workspace-wrap">
+      <div id="workspace" class="workspace" tabindex="0">
+        <svg id="edge-layer" class="edge-layer"></svg>
+        <div id="node-layer" class="node-layer"></div>
+        <div id="connect-hint" class="connect-hint hidden">Start a link with a node out port, then finish on another node in port.</div>
+      </div>
+    </main>
+
+    <aside class="sidebar right">
+      <section>
+        <h2>Generated Snippets</h2>
+        <div class="tab-row">
+          <button class="tab active" data-tab="terraform">Terraform</button>
+          <button class="tab" data-tab="k8s">Kubernetes YAML</button>
+        </div>
+        <pre id="code-output" class="code-output"></pre>
+      </section>
+
+      <section>
+        <h2>Insights</h2>
+        <ul id="insights" class="insights"></ul>
+      </section>
+
+      <section>
+        <h2>Legend</h2>
+        <ul class="legend" id="legend"></ul>
+      </section>
+    </aside>
+  </div>
+
+  <div id="rename-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="rename-modal-title">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card">
+      <h2 id="rename-modal-title">Rename Service</h2>
+      <label for="rename-input" class="muted">Service name</label>
+      <input id="rename-input" type="text" maxlength="80" autocomplete="off">
+      <div class="modal-actions">
+        <button id="rename-cancel-btn" class="btn">Cancel</button>
+        <button id="rename-save-btn" class="btn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+(function () {
+  const KEY = 'spa-theme';
+  const VALID = new Set(['dark', 'light']);
+  let initialized = false;
+
+  function normalize(mode) {
+    return VALID.has(mode) ? mode : null;
+  }
+
+  function readStored() {
+    try {
+      return normalize(localStorage.getItem(KEY));
+    } catch {
+      return null;
+    }
+  }
+
+  function apply(mode) {
+    document.documentElement.dataset.theme = mode;
+    document.documentElement.style.colorScheme = mode;
+  }
+
+  function emit(mode) {
+    window.dispatchEvent(new CustomEvent('themechange', { detail: { mode } }));
+  }
+
+  function get() {
+    return normalize(document.documentElement.dataset.theme) || 'dark';
+  }
+
+  function set(mode, persist = true) {
+    const normalized = normalize(mode) || 'dark';
+    apply(normalized);
+    if (persist) {
+      try {
+        localStorage.setItem(KEY, normalized);
+      } catch {
+        // ignore storage failures
+      }
+    }
+    emit(normalized);
+    return normalized;
+  }
+
+  function init(options = {}) {
+    const fallback = normalize(options.defaultMode) || 'dark';
+    const stored = readStored();
+    const mode = stored || fallback;
+    apply(mode);
+    if (!stored) {
+      try {
+        localStorage.setItem(KEY, mode);
+      } catch {
+        // ignore storage failures
+      }
+    }
+    if (!initialized) {
+      emit(mode);
+      initialized = true;
+    }
+    return mode;
+  }
+
+  function toggle() {
+    return set(get() === 'dark' ? 'light' : 'dark');
+  }
+
+  function mountToggle(button, options = {}) {
+    if (!button) return;
+
+    const darkIcon = options.darkIcon || '☀';
+    const lightIcon = options.lightIcon || '☾';
+
+    const sync = () => {
+      const mode = get();
+      const next = mode === 'dark' ? 'light' : 'dark';
+      button.textContent = mode === 'dark' ? darkIcon : lightIcon;
+      button.setAttribute('aria-label', `Switch to ${next} mode`);
+      button.setAttribute('title', `Switch to ${next} mode`);
+      button.dataset.mode = mode;
+    };
+
+    button.addEventListener('click', () => toggle());
+    window.addEventListener('themechange', sync);
+    sync();
+  }
+
+  window.Theme = {
+    init,
+    get,
+    set,
+    toggle,
+    mountToggle,
+  };
+
+  window.AppNav = {
+    goDashboard() {
+      window.location.href = 'dashboard.html';
+    },
+  };
+})();
+  </script>
+  <script>
+const SERVICE_TYPES = [
+  { id: 'lb', label: 'Load Balancer', color: '#0ea5e9', icon: 'LB' },
+  { id: 'web', label: 'Web App', color: '#22c55e', icon: 'WEB' },
+  { id: 'api', label: 'API', color: '#14b8a6', icon: 'API' },
+  { id: 'worker', label: 'Worker', color: '#6366f1', icon: 'WRK' },
+  { id: 'queue', label: 'Queue', color: '#f59e0b', icon: 'QUE' },
+  { id: 'cache', label: 'Cache', color: '#f97316', icon: 'CAC' },
+  { id: 'db', label: 'Database', color: '#ef4444', icon: 'DB' },
+  { id: 'storage', label: 'Object Storage', color: '#8b5cf6', icon: 'OBJ' },
+];
+
+const TYPE_BY_ID = Object.fromEntries(SERVICE_TYPES.map(t => [t.id, t]));
+
+const DEFAULT_DIAGRAM = () => ({
+  name: 'Untitled Architecture',
+  nodes: [],
+  edges: [],
+  updatedAt: Date.now(),
+});
+
+const state = {
+  db: null,
+  diagram: DEFAULT_DIAGRAM(),
+  selectedNodeId: null,
+  selectedEdgeId: null,
+  draggingNodeId: null,
+  dragOffset: { x: 0, y: 0 },
+  pendingLinkFromNodeId: null,
+  activeTab: 'terraform',
+  template: null,
+  renameNodeId: null,
+};
+
+let persistTimer = null;
+
+const el = {
+  workspace: document.getElementById('workspace'),
+  nodeLayer: document.getElementById('node-layer'),
+  edgeLayer: document.getElementById('edge-layer'),
+  palette: document.getElementById('service-palette'),
+  selectionPanel: document.getElementById('selection-panel'),
+  connectModeBtn: document.getElementById('connect-mode-btn'),
+  connectHint: document.getElementById('connect-hint'),
+  clearBtn: document.getElementById('clear-btn'),
+  autoLayoutBtn: document.getElementById('auto-layout-btn'),
+  codeOutput: document.getElementById('code-output'),
+  tabs: Array.from(document.querySelectorAll('.tab')),
+  insights: document.getElementById('insights'),
+  legend: document.getElementById('legend'),
+  diagramName: document.getElementById('diagram-name'),
+  exportBtn: document.getElementById('export-json-btn'),
+  importBtn: document.getElementById('import-json-btn'),
+  importFile: document.getElementById('import-json-file'),
+  saveTemplateBtn: document.getElementById('save-template-btn'),
+  loadTemplateBtn: document.getElementById('load-template-btn'),
+  renameModal: document.getElementById('rename-modal'),
+  renameInput: document.getElementById('rename-input'),
+  renameSaveBtn: document.getElementById('rename-save-btn'),
+  renameCancelBtn: document.getElementById('rename-cancel-btn'),
+};
+
+function uid(prefix) {
+  return prefix + '_' + Math.random().toString(36).slice(2, 9);
+}
+
+function dbOpen() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open('diagram-app', 1);
+    req.onupgradeneeded = () => {
+      if (!req.result.objectStoreNames.contains('state')) {
+        req.result.createObjectStore('state');
+      }
+    };
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbGet(key) {
+  return new Promise((resolve, reject) => {
+    const req = state.db.transaction('state').objectStore('state').get(key);
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbPut(key, value) {
+  return new Promise((resolve, reject) => {
+    const req = state.db.transaction('state', 'readwrite').objectStore('state').put(value, key);
+    req.onsuccess = () => resolve();
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function schedulePersist() {
+  if (persistTimer) clearTimeout(persistTimer);
+  persistTimer = setTimeout(() => {
+    dbPut('diagram', state.diagram);
+  }, 150);
+}
+
+function escapeHtml(str) {
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+function getWorkspacePoint(clientX, clientY) {
+  const rect = el.workspace.getBoundingClientRect();
+  return { x: clientX - rect.left, y: clientY - rect.top };
+}
+
+function clampNodePosition(x, y) {
+  const rect = el.workspace.getBoundingClientRect();
+  const maxX = Math.max(0, rect.width - 196);
+  const maxY = Math.max(0, rect.height - 108);
+  return {
+    x: Math.min(Math.max(0, x), maxX),
+    y: Math.min(Math.max(0, y), maxY),
+  };
+}
+
+function getNodeCenter(node) {
+  return { x: node.x + 96, y: node.y + 50 };
+}
+
+function getNodeType(typeId) {
+  return TYPE_BY_ID[typeId] || SERVICE_TYPES[0];
+}
+
+function touch({ full = true } = {}) {
+  state.diagram.updatedAt = Date.now();
+  if (full) render();
+  else renderCanvasAndOutputs();
+  schedulePersist();
+}
+
+function createNode(typeId, at) {
+  const type = getNodeType(typeId);
+  const count = state.diagram.nodes.filter(n => n.type === typeId).length + 1;
+  const pos = clampNodePosition(at.x, at.y);
+  state.diagram.nodes.push({
+    id: uid('node'),
+    type: type.id,
+    label: `${type.label} ${count}`,
+    x: pos.x,
+    y: pos.y,
+    meta: {},
+  });
+  touch();
+}
+
+function duplicateNode(nodeId) {
+  const node = state.diagram.nodes.find(n => n.id === nodeId);
+  if (!node) return;
+  const pos = clampNodePosition(node.x + 28, node.y + 28);
+  state.diagram.nodes.push({
+    ...node,
+    id: uid('node'),
+    x: pos.x,
+    y: pos.y,
+    label: node.label + ' Copy',
+    meta: { ...node.meta },
+  });
+  touch();
+}
+
+function deleteSelected() {
+  if (state.selectedNodeId) {
+    const nodeId = state.selectedNodeId;
+    state.diagram.nodes = state.diagram.nodes.filter(n => n.id !== nodeId);
+    state.diagram.edges = state.diagram.edges.filter(e => e.from !== nodeId && e.to !== nodeId);
+    if (state.pendingLinkFromNodeId === nodeId) state.pendingLinkFromNodeId = null;
+    state.selectedNodeId = null;
+  } else if (state.selectedEdgeId) {
+    state.diagram.edges = state.diagram.edges.filter(e => e.id !== state.selectedEdgeId);
+    state.selectedEdgeId = null;
+  } else {
+    return;
+  }
+  touch();
+}
+
+function addEdge(fromId, toId) {
+  if (!fromId || !toId || fromId === toId) return;
+  const exists = state.diagram.edges.some(e => e.from === fromId && e.to === toId);
+  if (exists) return;
+  state.diagram.edges.push({
+    id: uid('edge'),
+    from: fromId,
+    to: toId,
+    label: 'calls',
+  });
+  state.selectedNodeId = null;
+  state.selectedEdgeId = null;
+  touch();
+}
+
+function openRenameModal(nodeId) {
+  const node = state.diagram.nodes.find(n => n.id === nodeId);
+  if (!node) return;
+  state.renameNodeId = nodeId;
+  el.renameInput.value = node.label;
+  el.renameModal.classList.remove('hidden');
+  el.renameInput.focus();
+  el.renameInput.select();
+}
+
+function closeRenameModal() {
+  state.renameNodeId = null;
+  el.renameModal.classList.add('hidden');
+  el.renameInput.value = '';
+}
+
+function saveRenameModal() {
+  if (!state.renameNodeId) return closeRenameModal();
+  const node = state.diagram.nodes.find(n => n.id === state.renameNodeId);
+  if (!node) return closeRenameModal();
+  const nextLabel = el.renameInput.value.trim();
+  if (nextLabel) {
+    node.label = nextLabel;
+    touch({ full: false });
+  }
+  closeRenameModal();
+}
+
+function renderPalette() {
+  el.palette.innerHTML = '';
+  SERVICE_TYPES.forEach(type => {
+    const btn = document.createElement('button');
+    btn.className = 'service-chip';
+    btn.draggable = true;
+    btn.dataset.type = type.id;
+    btn.innerHTML = `<strong>${type.icon}</strong> ${escapeHtml(type.label)}`;
+    btn.addEventListener('click', () => {
+      createNode(type.id, {
+        x: 24 + Math.random() * 320,
+        y: 24 + Math.random() * 200,
+      });
+    });
+    btn.addEventListener('dragstart', e => {
+      e.dataTransfer.setData('text/plain', type.id);
+      e.dataTransfer.effectAllowed = 'copy';
+    });
+    el.palette.appendChild(btn);
+  });
+}
+
+function renderNodes() {
+  el.nodeLayer.innerHTML = '';
+  state.diagram.nodes.forEach(node => {
+    const type = getNodeType(node.type);
+    const isPendingSource = state.pendingLinkFromNodeId === node.id;
+    const nodeEl = document.createElement('article');
+    nodeEl.className = 'node' + (node.id === state.selectedNodeId ? ' selected' : '') + (isPendingSource ? ' linking' : '');
+    nodeEl.style.left = node.x + 'px';
+    nodeEl.style.top = node.y + 'px';
+    nodeEl.style.borderColor = type.color;
+    nodeEl.dataset.id = node.id;
+    nodeEl.innerHTML = `
+      <div class="node-header" data-drag-handle="true">
+        <div class="node-title">${escapeHtml(node.label)}</div>
+        <div class="node-actions">
+          <button class="node-action" data-action="rename" title="Rename" aria-label="Rename service">✎</button>
+          <button class="node-action" data-action="delete" title="Delete" aria-label="Delete service">🗑</button>
+        </div>
+      </div>
+      <div class="node-subtitle">${escapeHtml(node.meta.runtime || 'runtime: n/a')}</div>
+      <span class="node-type">${escapeHtml(type.label)}</span>
+      <div class="node-toolbar">
+        <button class="port port-in" title="Link target" aria-label="Link target">in</button>
+        <span class="node-toolbar-spacer"></span>
+        <button class="port port-out" title="Start link" aria-label="Start link">out</button>
+      </div>
+    `;
+
+    nodeEl.addEventListener('click', e => {
+      e.stopPropagation();
+      if (e.target.closest('.port') || e.target.closest('.node-action')) return;
+      state.selectedEdgeId = null;
+      state.selectedNodeId = node.id;
+      renderSelectionPanel();
+      renderNodes();
+      renderEdges();
+    });
+
+    const dragHandle = nodeEl.querySelector('[data-drag-handle="true"]');
+    dragHandle.addEventListener('pointerdown', e => {
+      if (e.target.closest('.port') || e.target.closest('.node-action')) return;
+      e.stopPropagation();
+      state.selectedEdgeId = null;
+      state.selectedNodeId = node.id;
+      state.draggingNodeId = node.id;
+      state.dragOffset = {
+        x: e.clientX - node.x - el.workspace.getBoundingClientRect().left,
+        y: e.clientY - node.y - el.workspace.getBoundingClientRect().top,
+      };
+      dragHandle.setPointerCapture(e.pointerId);
+      renderSelectionPanel();
+      renderNodes();
+    });
+
+    nodeEl.querySelector('[data-action="rename"]').addEventListener('click', e => {
+      e.stopPropagation();
+      openRenameModal(node.id);
+    });
+
+    nodeEl.querySelector('[data-action="delete"]').addEventListener('click', e => {
+      e.stopPropagation();
+      state.selectedNodeId = node.id;
+      deleteSelected();
+    });
+
+    nodeEl.querySelector('.port-out').addEventListener('click', e => {
+      e.stopPropagation();
+      state.pendingLinkFromNodeId = node.id;
+      state.selectedNodeId = node.id;
+      state.selectedEdgeId = null;
+      render();
+    });
+
+    nodeEl.querySelector('.port-in').addEventListener('click', e => {
+      e.stopPropagation();
+      if (!state.pendingLinkFromNodeId) {
+        state.selectedNodeId = node.id;
+        renderSelectionPanel();
+        renderNodes();
+        return;
+      }
+      if (state.pendingLinkFromNodeId === node.id) {
+        state.pendingLinkFromNodeId = null;
+        render();
+        return;
+      }
+      addEdge(state.pendingLinkFromNodeId, node.id);
+      state.pendingLinkFromNodeId = null;
+      render();
+    });
+
+    nodeEl.addEventListener('dblclick', e => {
+      e.stopPropagation();
+      if (e.target.closest('.port') || e.target.closest('.node-action')) return;
+      openRenameModal(node.id);
+    });
+
+    el.nodeLayer.appendChild(nodeEl);
+  });
+}
+
+function renderEdges() {
+  el.edgeLayer.innerHTML = '';
+  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+  const marker = document.createElementNS('http://www.w3.org/2000/svg', 'marker');
+  marker.setAttribute('id', 'arrowhead');
+  marker.setAttribute('viewBox', '0 0 10 10');
+  marker.setAttribute('refX', '9');
+  marker.setAttribute('refY', '5');
+  marker.setAttribute('markerUnits', 'strokeWidth');
+  marker.setAttribute('markerWidth', '7');
+  marker.setAttribute('markerHeight', '7');
+  marker.setAttribute('orient', 'auto');
+  const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  path.setAttribute('d', 'M 0 0 L 10 5 L 0 10 z');
+  path.setAttribute('fill', '#475569');
+  marker.appendChild(path);
+  defs.appendChild(marker);
+  el.edgeLayer.appendChild(defs);
+
+  state.diagram.edges.forEach(edge => {
+    const from = state.diagram.nodes.find(n => n.id === edge.from);
+    const to = state.diagram.nodes.find(n => n.id === edge.to);
+    if (!from || !to) return;
+
+    const a = getNodeCenter(from);
+    const b = getNodeCenter(to);
+    const mx = (a.x + b.x) / 2;
+    const curve = Math.abs(a.x - b.x) * 0.2;
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    line.setAttribute('d', `M ${a.x} ${a.y} C ${mx + curve} ${a.y}, ${mx - curve} ${b.y}, ${b.x} ${b.y}`);
+    line.setAttribute('fill', 'none');
+    line.setAttribute('stroke', edge.id === state.selectedEdgeId ? '#0f766e' : '#475569');
+    line.setAttribute('stroke-width', edge.id === state.selectedEdgeId ? '3' : '2');
+    line.setAttribute('marker-end', 'url(#arrowhead)');
+    line.style.pointerEvents = 'stroke';
+    line.addEventListener('click', e => {
+      e.stopPropagation();
+      state.pendingLinkFromNodeId = null;
+      state.selectedNodeId = null;
+      state.selectedEdgeId = edge.id;
+      renderSelectionPanel();
+      renderEdges();
+    });
+    el.edgeLayer.appendChild(line);
+  });
+}
+
+function renderSelectionPanel() {
+  if (state.pendingLinkFromNodeId) {
+    const source = state.diagram.nodes.find(n => n.id === state.pendingLinkFromNodeId);
+    if (source) {
+      el.selectionPanel.innerHTML = `
+        <div><strong>Linking from:</strong> ${escapeHtml(source.label)}</div>
+        <div class="muted">Click an <code>in</code> port on another node to complete the arrow.</div>
+        <div class="button-row" style="margin-top:8px"><button id="cancel-link-btn" class="btn">Cancel Link</button></div>
+      `;
+      document.getElementById('cancel-link-btn').addEventListener('click', () => {
+        state.pendingLinkFromNodeId = null;
+        render();
+      });
+      return;
+    }
+  }
+
+  if (state.selectedNodeId) {
+    const node = state.diagram.nodes.find(n => n.id === state.selectedNodeId);
+    if (!node) return;
+    const typeOptions = SERVICE_TYPES.map(t => `<option value="${t.id}" ${t.id === node.type ? 'selected' : ''}>${escapeHtml(t.label)}</option>`).join('');
+    el.selectionPanel.innerHTML = `
+      <div><strong>Node</strong></div>
+      <label class="muted" for="node-label">Name</label>
+      <input id="node-label" type="text" value="${escapeHtml(node.label)}">
+      <label class="muted" for="node-type">Type</label>
+      <select id="node-type">${typeOptions}</select>
+      <label class="muted" for="node-runtime">Runtime</label>
+      <input id="node-runtime" type="text" value="${escapeHtml(node.meta.runtime || '')}" placeholder="nodejs20, python3.12, go1.22">
+      <label class="muted" for="node-size">Size</label>
+      <input id="node-size" type="text" value="${escapeHtml(node.meta.size || '')}" placeholder="small, medium, db.t3.micro">
+      <div class="button-row" style="margin-top:8px">
+        <button id="rename-selected-btn" class="btn">Rename Dialog</button>
+        <button id="duplicate-selected-btn" class="btn">Duplicate</button>
+        <button id="delete-selected-btn" class="btn btn-danger">Delete</button>
+      </div>
+    `;
+    const labelInput = document.getElementById('node-label');
+    const typeInput = document.getElementById('node-type');
+    const runtimeInput = document.getElementById('node-runtime');
+    const sizeInput = document.getElementById('node-size');
+
+    labelInput.addEventListener('input', () => {
+      node.label = labelInput.value;
+      touch({ full: false });
+    });
+    typeInput.addEventListener('change', () => {
+      node.type = TYPE_BY_ID[typeInput.value] ? typeInput.value : node.type;
+      touch({ full: false });
+    });
+    runtimeInput.addEventListener('input', () => {
+      node.meta.runtime = runtimeInput.value;
+      touch({ full: false });
+    });
+    sizeInput.addEventListener('input', () => {
+      node.meta.size = sizeInput.value;
+      touch({ full: false });
+    });
+
+    document.getElementById('rename-selected-btn').addEventListener('click', () => openRenameModal(node.id));
+    document.getElementById('duplicate-selected-btn').addEventListener('click', () => duplicateNode(node.id));
+    document.getElementById('delete-selected-btn').addEventListener('click', deleteSelected);
+    return;
+  }
+
+  if (state.selectedEdgeId) {
+    const edge = state.diagram.edges.find(e => e.id === state.selectedEdgeId);
+    if (!edge) return;
+    el.selectionPanel.innerHTML = `
+      <div><strong>Edge</strong></div>
+      <label class="muted" for="edge-label">Relationship</label>
+      <input id="edge-label" type="text" value="${escapeHtml(edge.label || '')}" placeholder="calls, reads, writes">
+      <div class="button-row" style="margin-top:8px"><button id="delete-selected-btn" class="btn btn-danger">Delete</button></div>
+    `;
+    const edgeLabelInput = document.getElementById('edge-label');
+    edgeLabelInput.addEventListener('input', () => {
+      edge.label = edgeLabelInput.value;
+      touch({ full: false });
+    });
+    document.getElementById('delete-selected-btn').addEventListener('click', deleteSelected);
+    return;
+  }
+
+  el.selectionPanel.innerHTML = '<span class="muted">Select a node or edge to edit details.</span>';
+}
+
+function generateTerraform() {
+  const clean = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+  const lines = [];
+  lines.push('# Terraform sketch generated by Diagram');
+  lines.push('terraform {');
+  lines.push('  required_version = ">= 1.6.0"');
+  lines.push('}');
+  lines.push('');
+  lines.push('provider "aws" {');
+  lines.push('  region = "us-east-1"');
+  lines.push('}');
+  lines.push('');
+
+  state.diagram.nodes.forEach(node => {
+    const id = clean(node.label || node.id);
+    const type = node.type;
+    if (type === 'db') {
+      lines.push(`resource "aws_db_instance" "${id}" {`);
+      lines.push(`  identifier = "${id}"`);
+      lines.push('  engine     = "postgres"');
+      lines.push(`  instance_class = "${node.meta.size || 'db.t4g.micro'}"`);
+      lines.push('  allocated_storage = 20');
+      lines.push('  skip_final_snapshot = true');
+      lines.push('}');
+      lines.push('');
+      return;
+    }
+    if (type === 'cache') {
+      lines.push(`resource "aws_elasticache_cluster" "${id}" {`);
+      lines.push(`  cluster_id      = "${id}"`);
+      lines.push(`  node_type       = "${node.meta.size || 'cache.t4g.micro'}"`);
+      lines.push('  engine          = "redis"');
+      lines.push('  num_cache_nodes = 1');
+      lines.push('}');
+      lines.push('');
+      return;
+    }
+    if (type === 'queue') {
+      lines.push(`resource "aws_sqs_queue" "${id}" {`);
+      lines.push(`  name = "${id}"`);
+      lines.push('}');
+      lines.push('');
+      return;
+    }
+    if (type === 'storage') {
+      lines.push(`resource "aws_s3_bucket" "${id}" {`);
+      lines.push(`  bucket = "${id}-bucket"`);
+      lines.push('}');
+      lines.push('');
+      return;
+    }
+    if (type === 'lb') {
+      lines.push(`resource "aws_lb" "${id}" {`);
+      lines.push(`  name               = "${id}"`);
+      lines.push('  internal           = false');
+      lines.push('  load_balancer_type = "application"');
+      lines.push('  subnets            = ["subnet-abc", "subnet-def"]');
+      lines.push('}');
+      lines.push('');
+      return;
+    }
+
+    lines.push(`resource "aws_ecs_service" "${id}" {`);
+    lines.push(`  name = "${id}"`);
+    lines.push('  desired_count = 1');
+    lines.push('  launch_type = "FARGATE"');
+    lines.push('}');
+    lines.push('');
+  });
+
+  if (state.diagram.edges.length > 0) {
+    lines.push('# Connectivity from diagram');
+    state.diagram.edges.forEach(edge => {
+      const from = state.diagram.nodes.find(n => n.id === edge.from);
+      const to = state.diagram.nodes.find(n => n.id === edge.to);
+      if (!from || !to) return;
+      lines.push(`# ${from.label} -> ${to.label} (${edge.label || 'calls'})`);
+    });
+  }
+
+  return lines.join('\n');
+}
+
+function generateK8s() {
+  const clean = s => s.toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/^-+|-+$/g, '');
+  const docs = [];
+
+  state.diagram.nodes.forEach(node => {
+    const name = clean(node.label || node.id);
+    if (node.type === 'db') {
+      docs.push([
+        'apiVersion: apps/v1',
+        'kind: StatefulSet',
+        'metadata:',
+        `  name: ${name}`,
+        'spec:',
+        '  serviceName: db',
+        '  replicas: 1',
+        '  selector:',
+        '    matchLabels:',
+        `      app: ${name}`,
+        '  template:',
+        '    metadata:',
+        '      labels:',
+        `        app: ${name}`,
+        '    spec:',
+        '      containers:',
+        '      - name: postgres',
+        '        image: postgres:16',
+        '        ports:',
+        '        - containerPort: 5432',
+      ].join('\n'));
+      return;
+    }
+
+    if (node.type === 'queue') {
+      docs.push([
+        'apiVersion: v1',
+        'kind: Service',
+        'metadata:',
+        `  name: ${name}`,
+        'spec:',
+        '  selector:',
+        `    app: ${name}`,
+        '  ports:',
+        '  - name: amqp',
+        '    port: 5672',
+      ].join('\n'));
+      return;
+    }
+
+    docs.push([
+      'apiVersion: apps/v1',
+      'kind: Deployment',
+      'metadata:',
+      `  name: ${name}`,
+      'spec:',
+      '  replicas: 1',
+      '  selector:',
+      '    matchLabels:',
+      `      app: ${name}`,
+      '  template:',
+      '    metadata:',
+      '      labels:',
+      `        app: ${name}`,
+      '    spec:',
+      '      containers:',
+      `      - name: ${name}`,
+      '        image: nginx:stable',
+      '        ports:',
+      '        - containerPort: 80',
+      '---',
+      'apiVersion: v1',
+      'kind: Service',
+      'metadata:',
+      `  name: ${name}`,
+      'spec:',
+      '  selector:',
+      `    app: ${name}`,
+      '  ports:',
+      '  - port: 80',
+      '    targetPort: 80',
+    ].join('\n'));
+  });
+
+  if (state.diagram.edges.length > 0) {
+    docs.push([
+      'apiVersion: networking.k8s.io/v1',
+      'kind: NetworkPolicy',
+      'metadata:',
+      '  name: generated-diagram-flows',
+      'spec:',
+      '  podSelector: {}',
+      '  policyTypes:',
+      '  - Ingress',
+      '  - Egress',
+      '  # Review and scope these rules before applying to production.',
+    ].join('\n'));
+  }
+
+  return docs.join('\n---\n');
+}
+
+function renderCode() {
+  if (state.diagram.nodes.length === 0) {
+    el.codeOutput.textContent = '# Add services to start generating code.';
+    return;
+  }
+
+  el.codeOutput.textContent = state.activeTab === 'terraform'
+    ? generateTerraform()
+    : generateK8s();
+}
+
+function renderInsights() {
+  const issues = [];
+  const nodeCount = state.diagram.nodes.length;
+  const edgeCount = state.diagram.edges.length;
+
+  if (nodeCount === 0) {
+    issues.push('No services yet. Add at least one service node.');
+  }
+  if (edgeCount === 0 && nodeCount > 1) {
+    issues.push('Services are unconnected. Start a link from an out port and finish on an in port.');
+  }
+
+  const incoming = new Map(state.diagram.nodes.map(n => [n.id, 0]));
+  const outgoing = new Map(state.diagram.nodes.map(n => [n.id, 0]));
+  state.diagram.edges.forEach(e => {
+    if (incoming.has(e.to)) incoming.set(e.to, incoming.get(e.to) + 1);
+    if (outgoing.has(e.from)) outgoing.set(e.from, outgoing.get(e.from) + 1);
+  });
+
+  const isolated = state.diagram.nodes.filter(n => incoming.get(n.id) + outgoing.get(n.id) === 0);
+  if (isolated.length > 0) {
+    issues.push(`Isolated services: ${isolated.map(n => n.label).join(', ')}.`);
+  }
+
+  const hasDb = state.diagram.nodes.some(n => n.type === 'db');
+  const hasCache = state.diagram.nodes.some(n => n.type === 'cache');
+  if (hasDb && !hasCache) {
+    issues.push('Database present without cache. Consider a cache tier for read-heavy workloads.');
+  }
+
+  el.insights.innerHTML = '';
+  issues.forEach(msg => {
+    const li = document.createElement('li');
+    li.textContent = msg;
+    el.insights.appendChild(li);
+  });
+  if (issues.length === 0) {
+    const li = document.createElement('li');
+    li.textContent = 'Diagram looks coherent. Review generated code before deployment.';
+    el.insights.appendChild(li);
+  }
+}
+
+function renderLegend() {
+  el.legend.innerHTML = '';
+  SERVICE_TYPES.forEach(type => {
+    const li = document.createElement('li');
+    li.innerHTML = `<span class="legend-dot" style="background:${type.color}"></span>${escapeHtml(type.label)}`;
+    el.legend.appendChild(li);
+  });
+}
+
+function renderCanvasAndOutputs() {
+  renderNodes();
+  renderEdges();
+  renderCode();
+  renderInsights();
+  updateLinkUi();
+}
+
+function updateLinkUi() {
+  if (!state.pendingLinkFromNodeId) {
+    el.connectModeBtn.textContent = 'Link: None';
+    el.connectHint.classList.add('hidden');
+    return;
+  }
+  const source = state.diagram.nodes.find(n => n.id === state.pendingLinkFromNodeId);
+  el.connectModeBtn.textContent = source ? `Link: ${source.label}` : 'Link: None';
+  el.connectHint.classList.toggle('hidden', !source);
+  if (source) {
+    el.connectHint.textContent = `Linking from ${source.label}. Click an in port to connect.`;
+  }
+}
+
+function render() {
+  el.diagramName.value = state.diagram.name || 'Untitled Architecture';
+  renderCanvasAndOutputs();
+  renderSelectionPanel();
+}
+
+function exportDiagram() {
+  const payload = JSON.stringify(state.diagram, null, 2);
+  const blob = new Blob([payload], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const safeName = (state.diagram.name || 'diagram').replace(/\s+/g, '-').toLowerCase();
+  a.href = url;
+  a.download = `${safeName}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function importDiagram(text) {
+  try {
+    const parsed = JSON.parse(text);
+    if (!parsed || !Array.isArray(parsed.nodes) || !Array.isArray(parsed.edges)) {
+      throw new Error('Invalid schema');
+    }
+    state.diagram = {
+      name: parsed.name || 'Imported Architecture',
+      nodes: parsed.nodes.map(n => ({
+        id: n.id || uid('node'),
+        type: TYPE_BY_ID[n.type] ? n.type : 'web',
+        label: n.label || 'Service',
+        x: Number.isFinite(n.x) ? n.x : 40,
+        y: Number.isFinite(n.y) ? n.y : 40,
+        meta: n.meta && typeof n.meta === 'object' ? n.meta : {},
+      })),
+      edges: parsed.edges
+        .filter(e => typeof e.from === 'string' && typeof e.to === 'string')
+        .map(e => ({
+          id: e.id || uid('edge'),
+          from: e.from,
+          to: e.to,
+          label: e.label || 'calls',
+        })),
+      updatedAt: Date.now(),
+    };
+    state.selectedNodeId = null;
+    state.selectedEdgeId = null;
+    state.pendingLinkFromNodeId = null;
+    touch();
+  } catch {
+    window.alert('Could not import JSON. Check the file format and try again.');
+  }
+}
+
+function autoLayout() {
+  const spacingX = 240;
+  const spacingY = 150;
+  state.diagram.nodes.forEach((node, i) => {
+    const col = i % 4;
+    const row = Math.floor(i / 4);
+    const pos = clampNodePosition(32 + col * spacingX, 32 + row * spacingY);
+    node.x = pos.x;
+    node.y = pos.y;
+  });
+  touch();
+}
+
+function bindEvents() {
+  el.workspace.addEventListener('pointermove', e => {
+    if (!state.draggingNodeId) return;
+    const node = state.diagram.nodes.find(n => n.id === state.draggingNodeId);
+    if (!node) return;
+    const point = getWorkspacePoint(e.clientX, e.clientY);
+    const pos = clampNodePosition(point.x - state.dragOffset.x, point.y - state.dragOffset.y);
+    node.x = pos.x;
+    node.y = pos.y;
+    renderCanvasAndOutputs();
+  });
+
+  window.addEventListener('pointerup', () => {
+    if (state.draggingNodeId) {
+      state.draggingNodeId = null;
+      schedulePersist();
+    }
+  });
+
+  el.workspace.addEventListener('click', () => {
+    state.selectedNodeId = null;
+    state.selectedEdgeId = null;
+    state.pendingLinkFromNodeId = null;
+    render();
+  });
+
+  el.workspace.addEventListener('dragover', e => {
+    e.preventDefault();
+    el.workspace.classList.add('drag-over');
+  });
+
+  el.workspace.addEventListener('dragleave', () => {
+    el.workspace.classList.remove('drag-over');
+  });
+
+  el.workspace.addEventListener('drop', e => {
+    e.preventDefault();
+    el.workspace.classList.remove('drag-over');
+    const type = e.dataTransfer.getData('text/plain');
+    if (!TYPE_BY_ID[type]) return;
+    const point = getWorkspacePoint(e.clientX, e.clientY);
+    createNode(type, point);
+  });
+
+  el.connectModeBtn.addEventListener('click', () => {
+    state.pendingLinkFromNodeId = null;
+    render();
+  });
+
+  el.clearBtn.addEventListener('click', () => {
+    const ok = window.confirm('Clear the full diagram?');
+    if (!ok) return;
+    state.diagram = DEFAULT_DIAGRAM();
+    state.selectedNodeId = null;
+    state.selectedEdgeId = null;
+    state.pendingLinkFromNodeId = null;
+    touch();
+  });
+
+  el.autoLayoutBtn.addEventListener('click', autoLayout);
+
+  el.tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      el.tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      state.activeTab = tab.dataset.tab;
+      renderCode();
+    });
+  });
+
+  el.diagramName.addEventListener('input', () => {
+    state.diagram.name = el.diagramName.value.trim() || 'Untitled Architecture';
+    touch({ full: false });
+  });
+
+  el.exportBtn.addEventListener('click', exportDiagram);
+
+  el.importBtn.addEventListener('click', () => {
+    el.importFile.click();
+  });
+
+  el.importFile.addEventListener('change', async () => {
+    const [file] = el.importFile.files;
+    if (!file) return;
+    importDiagram(await file.text());
+    el.importFile.value = '';
+  });
+
+  el.saveTemplateBtn.addEventListener('click', async () => {
+    const nodeIdMap = new Map();
+    const templateNodes = state.diagram.nodes.map(n => {
+      const newId = uid('node');
+      nodeIdMap.set(n.id, newId);
+      return { ...n, id: newId, meta: { ...n.meta } };
+    });
+    const templateEdges = state.diagram.edges
+      .map(e => ({
+        ...e,
+        id: uid('edge'),
+        from: nodeIdMap.get(e.from),
+        to: nodeIdMap.get(e.to),
+      }))
+      .filter(e => e.from && e.to);
+
+    state.template = { nodes: templateNodes, edges: templateEdges };
+    await dbPut('template', state.template);
+    window.alert('Template saved from current diagram.');
+  });
+
+  el.loadTemplateBtn.addEventListener('click', () => {
+    if (!state.template) {
+      window.alert('No template saved yet.');
+      return;
+    }
+    const nodeIdMap = new Map();
+    const clonedNodes = state.template.nodes.map(n => {
+      const newId = uid('node');
+      nodeIdMap.set(n.id, newId);
+      return { ...n, id: newId, meta: { ...n.meta } };
+    });
+    const clonedEdges = state.template.edges
+      .map(e => ({
+        ...e,
+        id: uid('edge'),
+        from: nodeIdMap.get(e.from),
+        to: nodeIdMap.get(e.to),
+      }))
+      .filter(e => e.from && e.to);
+
+    state.diagram.nodes = clonedNodes;
+    state.diagram.edges = clonedEdges;
+    state.selectedNodeId = null;
+    state.selectedEdgeId = null;
+    state.pendingLinkFromNodeId = null;
+    touch();
+  });
+
+  el.renameSaveBtn.addEventListener('click', saveRenameModal);
+  el.renameCancelBtn.addEventListener('click', closeRenameModal);
+  el.renameModal.addEventListener('click', e => {
+    if (e.target instanceof HTMLElement && e.target.dataset.close === 'true') {
+      closeRenameModal();
+    }
+  });
+  el.renameInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      saveRenameModal();
+    }
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeRenameModal();
+    }
+  });
+
+  window.addEventListener('keydown', e => {
+    if (!el.renameModal.classList.contains('hidden')) {
+      if (e.key === 'Escape') closeRenameModal();
+      return;
+    }
+    if ((e.key === 'Backspace' || e.key === 'Delete') && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
+      e.preventDefault();
+      deleteSelected();
+    }
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+      e.preventDefault();
+      exportDiagram();
+    }
+    if (e.key === 'Escape') {
+      state.pendingLinkFromNodeId = null;
+      state.selectedNodeId = null;
+      state.selectedEdgeId = null;
+      render();
+    }
+  });
+}
+
+async function init() {
+  Theme.init({ defaultMode: 'dark' });
+  const dashboardBtn = document.getElementById('dashboard-btn');
+  if (dashboardBtn) {
+    dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+  }
+  Theme.mountToggle(document.getElementById('theme-toggle'));
+
+  state.db = await dbOpen();
+  const stored = await dbGet('diagram');
+  const template = await dbGet('template');
+  state.template = template || null;
+  if (stored && Array.isArray(stored.nodes) && Array.isArray(stored.edges)) {
+    state.diagram = stored;
+  }
+
+  renderPalette();
+  renderLegend();
+  bindEvents();
+  render();
+}
+
+init();
+  </script>
+</body>
+
+</html>

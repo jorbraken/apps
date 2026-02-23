@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workbench</title>
+  <style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.\!container{width:100%!important}.container{width:100%}@media (min-width:640px){.\!container{max-width:640px!important}.container{max-width:640px}}@media (min-width:768px){.\!container{max-width:768px!important}.container{max-width:768px}}@media (min-width:1024px){.\!container{max-width:1024px!important}.container{max-width:1024px}}@media (min-width:1280px){.\!container{max-width:1280px!important}.container{max-width:1280px}}@media (min-width:1536px){.\!container{max-width:1536px!important}.container{max-width:1536px}}.wb-app{display:grid;grid-template-rows:auto 1fr;height:100vh;overflow:hidden}.wb-header{display:flex;align-items:center;justify-content:space-between;padding:.5rem 1rem;background-color:#1e293b;color:#f8fafc}.wb-header-title{font-size:1.125rem;font-weight:600}.wb-header-right{display:flex;align-items:center;gap:.5rem}.wb-env-select{background:#334155;color:#f8fafc;border:1px solid #475569;border-radius:.375rem;padding:.25rem .5rem;font-size:.875rem}.wb-icon-btn{background:transparent;border:none;color:#f8fafc;cursor:pointer;padding:.25rem;font-size:1.25rem}.wb-body{display:flex;flex:1;min-height:0}.wb-sidebar{width:260px;min-width:260px;display:flex;flex-direction:column;border-right:1px solid #e2e8f0;background:#f8fafc}.wb-sidebar-tabs{display:flex;border-bottom:1px solid #e2e8f0}.wb-sidebar-tab{flex:1;padding:.5rem .75rem;font-size:.875rem;background:transparent;border:none;cursor:pointer;color:#64748b}.wb-sidebar-tab.active{font-weight:600;color:#1e293b;border-bottom:2px solid #3b82f6}.wb-sidebar-panel{flex:1;overflow-y:auto;padding:.5rem}.wb-sidebar-panel.hidden{display:none}.wb-sidebar-action{width:100%;padding:.375rem .5rem;font-size:.875rem;text-align:left;background:transparent;border:none;cursor:pointer;color:#3b82f6}.wb-sidebar-action:hover{background:#f1f5f9}.wb-collections-tree{margin-top:.25rem}.wb-collection-item{margin-bottom:.25rem}.wb-collection-header{display:flex;align-items:center;gap:.25rem;padding:.25rem .5rem;cursor:pointer;font-size:.875rem;background:transparent;border:none;width:100%;text-align:left}.wb-collection-header:hover{background:#f1f5f9}.wb-collection-requests{padding-left:1rem}.wb-request-item{display:flex;align-items:center;justify-content:space-between;padding:.25rem .5rem;font-size:.8125rem;cursor:pointer;border-radius:.25rem}.wb-request-item:hover{background:#f1f5f9}.wb-request-item-delete{opacity:0;background:none;border:none;cursor:pointer;padding:.125rem;color:#64748b}.wb-request-item:hover .wb-request-item-delete{opacity:1}.wb-history-list{margin-top:.25rem}.wb-history-item{padding:.375rem .5rem;font-size:.8125rem;cursor:pointer;border-radius:.25rem;border-bottom:1px solid #e2e8f0}.wb-history-item:hover,.wb-main{background:#f1f5f9}.wb-main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden;padding:1rem}.wb-url-card{background:#fff;border-radius:.5rem;padding:1rem;margin-bottom:1rem;box-shadow:0 1px 2px rgba(0,0,0,.05)}.wb-mode-row{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}.wb-mode-tabs{display:flex}.wb-mode-tab{padding:.375rem .75rem;font-size:.875rem;background:transparent;border:1px solid #e2e8f0;cursor:pointer}.wb-mode-tab:first-child{border-radius:.25rem 0 0 .25rem}.wb-mode-tab:last-child{border-radius:0 .25rem .25rem 0}.wb-mode-tab.active{background:#3b82f6;color:#fff;border-color:#3b82f6}.wb-method-select{padding:.375rem .5rem;min-width:6rem}.wb-method-select,.wb-url-input{font-size:.875rem;border:1px solid #e2e8f0;border-radius:.25rem}.wb-url-input{flex:1;min-width:200px;padding:.375rem .75rem;font-family:ui-monospace,monospace}.wb-send-btn{padding:.375rem 1rem;font-size:.875rem;font-weight:500;background:#3b82f6;color:#fff;border:none;border-radius:.25rem;cursor:pointer}.wb-send-btn:hover{background:#2563eb}.wb-send-btn.cancel{background:#ef4444}.wb-send-btn.cancel:hover{background:#dc2626}.wb-cors-note{margin-top:.5rem;font-size:.75rem;color:#64748b}.wb-request-panel{background:#fff;border-radius:.5rem;margin-bottom:1rem;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.05)}.wb-request-tabs{display:flex;border-bottom:1px solid #e2e8f0}.wb-request-tab{padding:.5rem 1rem;font-size:.875rem;background:transparent;border:none;cursor:pointer;color:#64748b}.wb-request-tab.active{font-weight:500;color:#1e293b;border-bottom:2px solid #3b82f6}.wb-tab-content{max-height:220px;overflow-y:auto;padding:.75rem}.wb-kv-table{width:100%;border-collapse:collapse;font-size:.875rem}.wb-kv-table th{text-align:left;color:#64748b;font-weight:500}.wb-kv-table input,.wb-kv-table td,.wb-kv-table th{padding:.25rem .5rem}.wb-kv-table input{width:100%;border:1px solid #e2e8f0;border-radius:.25rem;font-size:.875rem}.wb-response-panel{display:flex;flex-direction:column;flex:1;min-height:0;background:#fff;border-radius:.5rem;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.05)}.wb-response-toolbar{display:flex;align-items:center;gap:1rem;padding:.5rem 1rem;border-bottom:1px solid #e2e8f0;flex-wrap:wrap}.wb-response-status{font-size:.875rem;font-weight:600}.wb-response-meta{font-size:.8125rem;color:#64748b}.wb-response-actions{display:flex;gap:.5rem;margin-left:auto}.wb-response-action{padding:.25rem .5rem;font-size:.8125rem;background:transparent;border:1px solid #e2e8f0;border-radius:.25rem;cursor:pointer}.wb-response-action:hover{background:#f1f5f9}.wb-response-tabs{display:flex;border-bottom:1px solid #e2e8f0}.wb-response-tab{padding:.5rem 1rem;font-size:.875rem;background:transparent;border:none;cursor:pointer;color:#64748b}.wb-response-tab.active{font-weight:500;color:#1e293b;border-bottom:2px solid #3b82f6}.wb-response-body-content{max-height:none;font-family:ui-monospace,monospace;font-size:.8125rem;white-space:pre-wrap;word-break:break-all}.wb-response-body-content,.wb-response-headers-content{flex:1;overflow-y:auto;padding:1rem}.wb-response-headers-content.hidden{display:none}.wb-modal{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center}.wb-modal.hidden{display:none}.wb-modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.4)}.wb-modal-content{position:relative;background:#fff;border-radius:.5rem;box-shadow:0 10px 25px rgba(0,0,0,.15);max-width:90vw;max-height:90vh;overflow:auto;padding:1.5rem}.wb-modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}.wb-modal-header h2{margin:0;font-size:1.25rem}.wb-modal-close{background:none;border:none;font-size:1.5rem;cursor:pointer;color:#64748b}.wb-modal-body label{display:block;font-size:.875rem;margin-top:.75rem;margin-bottom:.25rem}.wb-input,.wb-select,.wb-textarea{width:100%;padding:.5rem;border:1px solid #e2e8f0;border-radius:.25rem;font-size:.875rem}.wb-textarea{font-family:ui-monospace,monospace;resize:vertical;min-height:4rem}.wb-btn{margin-top:1rem;padding:.5rem 1rem;font-size:.875rem;background:#3b82f6;color:#fff;border:none;border-radius:.25rem;cursor:pointer}.wb-btn:hover{background:#2563eb}.wb-env-list{margin-bottom:.75rem}.wb-env-list-item{display:flex;align-items:center;justify-content:space-between;padding:.5rem;border-radius:.25rem}.wb-env-list-item:hover{background:#f1f5f9}.wb-env-list-item.active{font-weight:600}.wb-env-vars{margin-top:1rem;padding-top:1rem;border-top:1px solid #e2e8f0}.wb-env-vars.hidden{display:none}.method-get{color:#059669}.method-post{color:#2563eb}.method-put{color:#d97706}.method-patch{color:#7c3aed}.method-delete{color:#dc2626}.method-head,.method-options{color:#6b7280}.status-2xx{background-color:#10b981}.status-2xx,.status-3xx{color:#fff;padding:.125rem .5rem;border-radius:.25rem;font-size:.875rem}.status-3xx{background-color:#3b82f6}.status-4xx{background-color:#d97706}.status-4xx,.status-5xx{color:#fff;padding:.125rem .5rem;border-radius:.25rem;font-size:.875rem}.status-5xx{background-color:#dc2626}.hl-key{color:#7c3aed}.hl-string{color:#059669}.hl-number{color:#2563eb}.hl-bool{color:#d97706}.hl-null{color:#6b7280}.hidden{display:none!important}.block{display:block}.table{display:table}.hidden{display:none}.blur{--tw-blur:blur(8px)}.blur,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}[data-theme=dark] .wb-header{background:#020617;color:#e2e8f0}[data-theme=dark] .wb-env-select,[data-theme=dark] .wb-icon-btn{background:#111827;color:#e2e8f0;border-color:#334155}[data-theme=dark] .wb-sidebar{background:#111827;border-color:#334155}[data-theme=dark] .wb-main{background:#0f172a}[data-theme=dark] .wb-modal-content,[data-theme=dark] .wb-request-panel,[data-theme=dark] .wb-response-panel,[data-theme=dark] .wb-url-card{background:#111827;border-color:#334155;color:#e2e8f0}[data-theme=dark] .wb-cors-note,[data-theme=dark] .wb-request-item-delete,[data-theme=dark] .wb-response-meta,[data-theme=dark] .wb-sidebar-tab{color:#94a3b8}[data-theme=dark] .wb-request-tab.active,[data-theme=dark] .wb-response-tab.active,[data-theme=dark] .wb-sidebar-tab.active{color:#e2e8f0;border-color:#38bdf8}[data-theme=dark] .wb-collection-header:hover,[data-theme=dark] .wb-env-list-item:hover,[data-theme=dark] .wb-history-item:hover,[data-theme=dark] .wb-request-item:hover,[data-theme=dark] .wb-sidebar-action:hover{background:#1e293b}[data-theme=dark] .wb-input,[data-theme=dark] .wb-method-select,[data-theme=dark] .wb-select,[data-theme=dark] .wb-url-input,[data-theme=dark] textarea{background:#0f172a;color:#e2e8f0;border-color:#334155}[data-theme=dark] .wb-response-body-content,[data-theme=dark] .wb-response-headers-content{background:#020617;color:#e2e8f0}
+  </style>
+</head>
+
+<body class="wb-app">
+  <header class="wb-header">
+    <span class="wb-header-title">Workbench</span>
+    <div class="wb-header-right">
+      <select id="wb-env-select" class="wb-env-select" title="Environment">
+        <option value="">No Environment</option>
+      </select>
+      <button id="dashboard-btn" class="wb-icon-btn" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+      <button id="theme-toggle" class="wb-icon-btn" aria-label="Switch theme" title="Switch theme"></button>
+      <button id="wb-env-btn" class="wb-icon-btn" title="Manage environments">&#9881;</button>
+    </div>
+  </header>
+
+  <div class="wb-body">
+    <aside class="wb-sidebar">
+      <div class="wb-sidebar-tabs">
+        <button id="wb-sidebar-collections" class="wb-sidebar-tab active">Collections</button>
+        <button id="wb-sidebar-history" class="wb-sidebar-tab">History</button>
+      </div>
+      <div id="wb-sidebar-collections-panel" class="wb-sidebar-panel">
+        <button id="wb-new-collection" class="wb-sidebar-action">+ New Coll</button>
+        <div id="wb-collections-tree" class="wb-collections-tree"></div>
+      </div>
+      <div id="wb-sidebar-history-panel" class="wb-sidebar-panel hidden">
+        <button id="wb-clear-history" class="wb-sidebar-action">Clear history</button>
+        <div id="wb-history-list" class="wb-history-list"></div>
+      </div>
+    </aside>
+
+    <main class="wb-main">
+      <div class="wb-url-card">
+        <div class="wb-mode-row">
+          <div class="wb-mode-tabs">
+            <button id="wb-mode-rest" class="wb-mode-tab active">REST</button>
+            <button id="wb-mode-gql" class="wb-mode-tab">GraphQL</button>
+          </div>
+          <select id="wb-method" class="wb-method-select"></select>
+          <input id="wb-url" type="text" class="wb-url-input" placeholder="https://api.example.com/..." spellcheck="false">
+          <button id="wb-send-btn" class="wb-send-btn">Send</button>
+        </div>
+        <p class="wb-cors-note">Requests may be blocked by CORS when sent from this page.</p>
+      </div>
+
+      <div class="wb-request-panel">
+        <div class="wb-request-tabs">
+          <button id="wb-tab-params" class="wb-request-tab active">Params</button>
+          <button id="wb-tab-headers" class="wb-request-tab">Headers</button>
+          <button id="wb-tab-body" class="wb-request-tab">Body</button>
+          <button id="wb-tab-auth" class="wb-request-tab">Auth</button>
+        </div>
+        <div id="wb-request-tab-content" class="wb-tab-content"></div>
+      </div>
+
+      <div class="wb-response-panel">
+        <div class="wb-response-toolbar">
+          <span id="wb-response-status" class="wb-response-status"></span>
+          <span id="wb-response-meta" class="wb-response-meta"></span>
+          <div class="wb-response-actions">
+            <button id="wb-download-btn" class="wb-response-action" title="Save to file">&#8595; Save</button>
+            <button id="wb-curl-btn" class="wb-response-action" title="Copy as cURL">cURL</button>
+            <button id="wb-save-to-collection-btn" class="wb-response-action" title="Save request to collection">&#9829; Save</button>
+          </div>
+        </div>
+        <div class="wb-response-tabs">
+          <button id="wb-response-tab-body" class="wb-response-tab active">Body</button>
+          <button id="wb-response-tab-headers" class="wb-response-tab">Headers</button>
+        </div>
+        <div id="wb-response-body" class="wb-response-body-content"></div>
+        <div id="wb-response-headers" class="wb-response-headers-content hidden"></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="wb-env-modal" class="wb-modal hidden" role="dialog" aria-modal="true" aria-label="Environments">
+    <div class="wb-modal-backdrop"></div>
+    <div class="wb-modal-content">
+      <div class="wb-modal-header">
+        <h2>Environments</h2>
+        <button id="wb-env-modal-close" class="wb-modal-close">&times;</button>
+      </div>
+      <div class="wb-modal-body">
+        <div id="wb-env-list" class="wb-env-list"></div>
+        <button id="wb-env-add" class="wb-btn">+ Add environment</button>
+        <div id="wb-env-vars" class="wb-env-vars hidden">
+          <h3>Variables</h3>
+          <div id="wb-env-vars-table-wrap"></div>
+          <button id="wb-env-set-active" class="wb-btn">Set Active</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="wb-save-modal" class="wb-modal hidden" role="dialog" aria-modal="true" aria-label="Save request">
+    <div class="wb-modal-backdrop"></div>
+    <div class="wb-modal-content">
+      <div class="wb-modal-header">
+        <h2>Save request</h2>
+        <button id="wb-save-modal-close" class="wb-modal-close">&times;</button>
+      </div>
+      <div class="wb-modal-body">
+        <label for="wb-save-name">Name</label>
+        <input id="wb-save-name" type="text" class="wb-input" placeholder="Request name">
+        <label for="wb-save-collection">Collection</label>
+        <select id="wb-save-collection" class="wb-select"></select>
+        <button id="wb-save-submit" class="wb-btn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+(function () {
+  const KEY = 'spa-theme';
+  const VALID = new Set(['dark', 'light']);
+  let initialized = false;
+
+  function normalize(mode) {
+    return VALID.has(mode) ? mode : null;
+  }
+
+  function readStored() {
+    try {
+      return normalize(localStorage.getItem(KEY));
+    } catch {
+      return null;
+    }
+  }
+
+  function apply(mode) {
+    document.documentElement.dataset.theme = mode;
+    document.documentElement.style.colorScheme = mode;
+  }
+
+  function emit(mode) {
+    window.dispatchEvent(new CustomEvent('themechange', { detail: { mode } }));
+  }
+
+  function get() {
+    return normalize(document.documentElement.dataset.theme) || 'dark';
+  }
+
+  function set(mode, persist = true) {
+    const normalized = normalize(mode) || 'dark';
+    apply(normalized);
+    if (persist) {
+      try {
+        localStorage.setItem(KEY, normalized);
+      } catch {
+        // ignore storage failures
+      }
+    }
+    emit(normalized);
+    return normalized;
+  }
+
+  function init(options = {}) {
+    const fallback = normalize(options.defaultMode) || 'dark';
+    const stored = readStored();
+    const mode = stored || fallback;
+    apply(mode);
+    if (!stored) {
+      try {
+        localStorage.setItem(KEY, mode);
+      } catch {
+        // ignore storage failures
+      }
+    }
+    if (!initialized) {
+      emit(mode);
+      initialized = true;
+    }
+    return mode;
+  }
+
+  function toggle() {
+    return set(get() === 'dark' ? 'light' : 'dark');
+  }
+
+  function mountToggle(button, options = {}) {
+    if (!button) return;
+
+    const darkIcon = options.darkIcon || '☀';
+    const lightIcon = options.lightIcon || '☾';
+
+    const sync = () => {
+      const mode = get();
+      const next = mode === 'dark' ? 'light' : 'dark';
+      button.textContent = mode === 'dark' ? darkIcon : lightIcon;
+      button.setAttribute('aria-label', `Switch to ${next} mode`);
+      button.setAttribute('title', `Switch to ${next} mode`);
+      button.dataset.mode = mode;
+    };
+
+    button.addEventListener('click', () => toggle());
+    window.addEventListener('themechange', sync);
+    sync();
+  }
+
+  window.Theme = {
+    init,
+    get,
+    set,
+    toggle,
+    mountToggle,
+  };
+
+  window.AppNav = {
+    goDashboard() {
+      window.location.href = 'dashboard.html';
+    },
+  };
+})();
+  </script>
+  <script>
+// --- Constants ---
+const METHODS = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'];
+const METHOD_COLORS = {
+  GET: 'method-get',
+  POST: 'method-post',
+  PUT: 'method-put',
+  PATCH: 'method-patch',
+  DELETE: 'method-delete',
+  HEAD: 'method-head',
+  OPTIONS: 'method-options',
+};
+const MAX_HISTORY = 50;
+
+// --- IndexedDB ---
+function dbOpen() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open('workbench-app', 1);
+    req.onupgradeneeded = () => req.result.createObjectStore('state');
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbGet(db, key) {
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('state').objectStore('state').get(key);
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+}
+
+function dbPut(db, key, val) {
+  return new Promise((resolve, reject) => {
+    const req = db.transaction('state', 'readwrite').objectStore('state').put(val, key);
+    req.onsuccess = () => resolve();
+    req.onerror = () => reject(req.error);
+  });
+}
+
+// --- Default State ---
+function defaultRequest() {
+  return {
+    id: uid(),
+    name: '',
+    method: 'GET',
+    url: '',
+    params: [{ key: '', value: '', enabled: true }],
+    headers: [{ key: '', value: '', enabled: true }],
+    bodyType: 'none',
+    bodyContent: '',
+    authType: 'none',
+    authBearer: '',
+    authBasicUser: '',
+    authBasicPass: '',
+    authApiKeyKey: '',
+    authApiKeyValue: '',
+    authApiKeyPlace: 'header',
+    isGraphql: false,
+    graphqlQuery: '',
+    graphqlVariables: '{}',
+  };
+}
+
+// --- State ---
+let db;
+let collections = [];
+let environments = [];
+let history = [];
+let activeEnvId = null;
+let current = defaultRequest();
+let activeTab = 'params';
+let activeResponseTab = 'body';
+let response = null;
+let isSending = false;
+let abortController = null;
+let sidebarTab = 'collections';
+let expandedCollections = new Set();
+let envModalOpen = false;
+let saveModalOpen = false;
+let activeEnvEditId = null;
+let syncing = false;
+
+// --- Persistence ---
+function save() {
+  if (!db) return;
+  dbPut(db, 'collections', collections);
+  dbPut(db, 'environments', environments);
+  dbPut(db, 'history', history);
+  dbPut(db, 'activeEnvId', activeEnvId);
+  dbPut(db, 'current', current);
+  dbPut(db, 'expandedCollections', [...expandedCollections]);
+  render();
+}
+
+function saveState() {
+  if (!db) return;
+  dbPut(db, 'collections', collections);
+  dbPut(db, 'environments', environments);
+  dbPut(db, 'history', history);
+  dbPut(db, 'activeEnvId', activeEnvId);
+  dbPut(db, 'current', current);
+  dbPut(db, 'expandedCollections', [...expandedCollections]);
+}
+
+// --- Utility ---
+function escapeHtml(s) {
+  if (s == null) return '';
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+function uid() {
+  return Date.now().toString(36) + Math.random().toString(36).slice(2);
+}
+
+function formatBytes(n) {
+  if (n < 1024) return n + ' B';
+  if (n < 1024 * 1024) return (n / 1024).toFixed(1) + ' KB';
+  return (n / (1024 * 1024)).toFixed(1) + ' MB';
+}
+
+function formatDuration(ms) {
+  if (ms < 1000) return ms + 'ms';
+  return (ms / 1000).toFixed(2) + 's';
+}
+
+// --- Environment Substitution ---
+function getActiveEnv() {
+  if (!activeEnvId) return null;
+  return environments.find((e) => e.id === activeEnvId) || null;
+}
+
+function applyEnv(str) {
+  if (!str || typeof str !== 'string') return str;
+  const env = getActiveEnv();
+  if (!env || !env.variables) return str;
+  return str.replace(/\{\{(\w+)\}\}/g, (_, name) => {
+    const v = env.variables.find((x) => x.key === name && x.enabled);
+    return v ? (v.value || '') : '{{' + name + '}}';
+  });
+}
+
+// --- URL / Params Sync ---
+function syncParamsFromUrl() {
+  if (syncing) return;
+  const urlInput = document.getElementById('wb-url');
+  if (!urlInput) return;
+  const raw = (urlInput.value || '').trim();
+  if (!raw) return;
+  try {
+    syncing = true;
+    const url = new URL(raw.startsWith('http') ? raw : 'https://' + raw);
+    const fromUrl = [];
+    url.searchParams.forEach((value, key) => {
+      fromUrl.push({ key, value, enabled: true });
+    });
+    const disabled = current.params.filter((p) => !p.enabled);
+    current.params = fromUrl.length ? fromUrl : [{ key: '', value: '', enabled: true }];
+    disabled.forEach((p) => {
+      if (p.key) current.params.push({ ...p, enabled: false });
+    });
+  } catch (_) {
+    // invalid URL, ignore
+  } finally {
+    syncing = false;
+  }
+}
+
+function syncUrlFromParams() {
+  if (syncing) return;
+  const urlInput = document.getElementById('wb-url');
+  if (!urlInput) return;
+  try {
+    syncing = true;
+    const raw = (urlInput.value || '').trim();
+    let base = raw.startsWith('http') ? raw : 'https://' + (raw || 'example.com');
+    try {
+      const u = new URL(base);
+      base = u.origin + u.pathname;
+    } catch (_) {
+      base = base.split('?')[0] || base;
+    }
+    const enabled = current.params.filter((p) => p.enabled && p.key.trim() !== '');
+    const search = new URLSearchParams();
+    enabled.forEach((p) => search.set(p.key, p.value));
+    const qs = search.toString();
+    urlInput.value = qs ? base + '?' + qs : base;
+  } finally {
+    syncing = false;
+  }
+}
+
+// --- HTTP Request ---
+async function sendRequest() {
+  if (isSending) {
+    if (abortController) abortController.abort();
+    return;
+  }
+
+  const urlInput = document.getElementById('wb-url');
+  let url = applyEnv((urlInput && urlInput.value) || current.url || '').trim();
+  if (!url) return;
+  if (!url.startsWith('http')) url = 'https://' + url;
+
+  isSending = true;
+  abortController = new AbortController();
+  renderSendBtn();
+
+  const method = current.isGraphql ? 'POST' : current.method;
+  const headers = {};
+
+  current.headers.forEach((h) => {
+    if (h.enabled && h.key.trim()) headers[h.key.trim()] = applyEnv(h.value);
+  });
+
+  if (current.authType === 'bearer' && current.authBearer) {
+    headers['Authorization'] = 'Bearer ' + applyEnv(current.authBearer);
+  } else if (current.authType === 'basic' && (current.authBasicUser || current.authBasicPass)) {
+    const u = applyEnv(current.authBasicUser || '');
+    const p = applyEnv(current.authBasicPass || '');
+    headers['Authorization'] = 'Basic ' + btoa(u + ':' + p);
+  } else if (current.authType === 'apikey' && current.authApiKeyKey && current.authApiKeyValue) {
+    const key = current.authApiKeyKey.trim();
+    const val = applyEnv(current.authApiKeyValue);
+    if (current.authApiKeyPlace === 'header') headers[key] = val;
+  }
+
+  let body = null;
+  if (current.isGraphql) {
+    headers['Content-Type'] = 'application/json';
+    let vars = {};
+    try {
+      vars = JSON.parse(current.graphqlVariables || '{}');
+    } catch (_) {}
+    body = JSON.stringify({ query: current.graphqlQuery || '', variables: vars });
+  } else {
+    if (current.bodyType === 'json' && current.bodyContent) {
+      headers['Content-Type'] = 'application/json';
+      body = applyEnv(current.bodyContent);
+    } else if (current.bodyType === 'form' && current.bodyContent) {
+      headers['Content-Type'] = 'application/x-www-form-urlencoded';
+      body = applyEnv(current.bodyContent);
+    } else if (current.bodyType === 'raw' && current.bodyContent) {
+      body = applyEnv(current.bodyContent);
+    }
+  }
+
+  if (current.authType === 'apikey' && current.authApiKeyPlace === 'query') {
+    const u = new URL(url);
+    u.searchParams.set(current.authApiKeyKey.trim(), applyEnv(current.authApiKeyValue));
+    url = u.toString();
+  }
+
+  const start = performance.now();
+  try {
+    const fetchResp = await fetch(url, {
+      method,
+      headers,
+      body: body || undefined,
+      signal: abortController.signal,
+    });
+    const text = await fetchResp.text();
+    const duration = Math.round(performance.now() - start);
+    const headersObj = {};
+    fetchResp.headers.forEach((v, k) => (headersObj[k] = v));
+    response = {
+      status: fetchResp.status,
+      statusText: fetchResp.statusText,
+      headers: headersObj,
+      body: text,
+      duration,
+      size: new Blob([text]).size,
+    };
+    const last = history[history.length - 1];
+    const entry = {
+      id: uid(),
+      method: current.method,
+      url: current.url || url,
+      status: fetchResp.status,
+      timestamp: Date.now(),
+      duration,
+    };
+    if (!last || last.method !== entry.method || last.url !== entry.url) {
+      history.push(entry);
+      if (history.length > MAX_HISTORY) history = history.slice(-MAX_HISTORY);
+    }
+  } catch (err) {
+    if (err.name === 'AbortError') {
+      response = null;
+    } else {
+      response = {
+        status: 0,
+        statusText: err.message || 'Network error',
+        headers: {},
+        body: err.message || 'Request failed',
+        duration: Math.round(performance.now() - start),
+        size: 0,
+      };
+    }
+  } finally {
+    isSending = false;
+    abortController = null;
+    saveState();
+    renderSendBtn();
+    renderResponsePanel();
+    renderSidebar();
+  }
+}
+
+// --- cURL Generator ---
+function buildCurl() {
+  const urlInput = document.getElementById('wb-url');
+  let url = (urlInput && urlInput.value) || current.url || '';
+  url = url.trim();
+  if (!url.startsWith('http')) url = 'https://' + url;
+  const method = current.isGraphql ? 'POST' : current.method;
+  const parts = ['curl -X ' + method];
+  const headers = { ...current.headers.filter((h) => h.enabled && h.key).reduce((o, h) => ({ ...o, [h.key]: h.value }), {}) };
+  if (current.authType === 'bearer' && current.authBearer) headers['Authorization'] = 'Bearer ' + current.authBearer;
+  if (current.authType === 'basic' && (current.authBasicUser || current.authBasicPass)) {
+    headers['Authorization'] = 'Basic ' + btoa((current.authBasicUser || '') + ':' + (current.authBasicPass || ''));
+  }
+  if (current.authType === 'apikey' && current.authApiKeyPlace === 'header') {
+    headers[current.authApiKeyKey] = current.authApiKeyValue;
+  }
+  Object.entries(headers).forEach(([k, v]) => parts.push("-H '" + k + ': ' + v.replace(/'/g, "'\\''") + "'"));
+  let body = null;
+  if (current.isGraphql) {
+    body = JSON.stringify({ query: current.graphqlQuery || '', variables: (() => { try { return JSON.parse(current.graphqlVariables || '{}'); } catch (_) { return {}; } })() });
+  } else if (current.bodyType === 'json' && current.bodyContent) body = current.bodyContent;
+  else if (current.bodyType === 'form' && current.bodyContent) body = current.bodyContent;
+  else if (current.bodyType === 'raw' && current.bodyContent) body = current.bodyContent;
+  if (body) parts.push("--data-raw '" + body.replace(/'/g, "'\\''") + "'");
+  parts.push("'" + url.replace(/'/g, "'\\''") + "'");
+  return parts.join(' \\\n  ');
+}
+
+// --- JSON Highlight ---
+function highlightJson(str) {
+  try {
+    const parsed = JSON.parse(str);
+    const pretty = JSON.stringify(parsed, null, 2);
+    return pretty
+      .replace(/("(?:[^"\\]|\\.)*")/g, '<span class="hl-string">$1</span>')
+      .replace(/\b(true|false)\b/g, '<span class="hl-bool">$1</span>')
+      .replace(/\bnull\b/g, '<span class="hl-null">null</span>')
+      .replace(/\b(-?\d+\.?\d*([eE][+-]?\d+)?)\b/g, '<span class="hl-number">$1</span>')
+      .replace(/"([^"]+)":/g, '<span class="hl-key">"$1"</span>:');
+  } catch (_) {
+    return escapeHtml(str);
+  }
+}
+
+// --- Response Rendering ---
+function renderSendBtn() {
+  const btn = document.getElementById('wb-send-btn');
+  if (!btn) return;
+  if (isSending) {
+    btn.textContent = 'Cancel';
+    btn.classList.add('cancel');
+  } else {
+    btn.textContent = 'Send';
+    btn.classList.remove('cancel');
+  }
+}
+
+function renderResponsePanel() {
+  const statusEl = document.getElementById('wb-response-status');
+  const metaEl = document.getElementById('wb-response-meta');
+  const bodyEl = document.getElementById('wb-response-body');
+  const headersEl = document.getElementById('wb-response-headers');
+  if (!statusEl || !bodyEl) return;
+
+  if (!response) {
+    statusEl.textContent = '';
+    statusEl.className = 'wb-response-status';
+    if (metaEl) metaEl.textContent = '';
+    bodyEl.innerHTML = '';
+    if (headersEl) headersEl.innerHTML = '';
+    return;
+  }
+
+  const statusClass = response.status >= 200 && response.status < 300 ? 'status-2xx' :
+    response.status >= 300 && response.status < 400 ? 'status-3xx' :
+    response.status >= 400 && response.status < 500 ? 'status-4xx' :
+    response.status >= 500 ? 'status-5xx' : 'status-4xx';
+  statusEl.textContent = response.status + ' ' + (response.statusText || '');
+  statusEl.className = 'wb-response-status ' + statusClass;
+  if (metaEl) metaEl.textContent = formatDuration(response.duration) + ' \u2022 ' + formatBytes(response.size);
+
+  const contentType = (response.headers['content-type'] || '').toLowerCase();
+  const isJson = contentType.includes('application/json');
+  if (isJson) {
+    bodyEl.innerHTML = '<pre class="wb-json-pre">' + highlightJson(response.body) + '</pre>';
+  } else {
+    bodyEl.innerHTML = '<pre>' + escapeHtml(response.body || '') + '</pre>';
+  }
+
+  if (headersEl) {
+    let table = '<table class="wb-kv-table"><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody>';
+    Object.entries(response.headers).forEach(([k, v]) => {
+      table += '<tr><td>' + escapeHtml(k) + '</td><td>' + escapeHtml(v) + '</td></tr>';
+    });
+    table += '</tbody></table>';
+    headersEl.innerHTML = table;
+  }
+}
+
+// --- Render: Sidebar ---
+function renderCollections() {
+  const tree = document.getElementById('wb-collections-tree');
+  if (!tree) return;
+  tree.innerHTML = '';
+  collections.forEach((coll) => {
+    const div = document.createElement('div');
+    div.className = 'wb-collection-item';
+    const expanded = expandedCollections.has(coll.id);
+    div.innerHTML = `
+      <button class="wb-collection-header" data-id="${escapeHtml(coll.id)}" type="button">
+        <span>${expanded ? '\u25BC' : '\u25B6'}</span>
+        <span>${escapeHtml(coll.name)}</span>
+      </button>
+      <div class="wb-collection-requests" data-id="${escapeHtml(coll.id)}" ${expanded ? '' : 'style="display:none"'}>
+        ${(coll.requests || []).map((req) => `
+          <div class="wb-request-item" data-coll-id="${escapeHtml(coll.id)}" data-req-id="${escapeHtml(req.id)}">
+            <span class="${METHOD_COLORS[req.method] || ''}">${escapeHtml(req.method)}</span> ${escapeHtml(req.name || req.url || 'Untitled')}
+            <button class="wb-request-item-delete" type="button" title="Delete">\u00D7</button>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    tree.appendChild(div);
+  });
+}
+
+function renderHistory() {
+  const list = document.getElementById('wb-history-list');
+  if (!list) return;
+  list.innerHTML = '';
+  [...history].reverse().forEach((item) => {
+    const el = document.createElement('div');
+    el.className = 'wb-history-item';
+    el.dataset.id = item.id;
+    const statusClass = item.status >= 200 && item.status < 300 ? 'status-2xx' :
+      item.status >= 300 && item.status < 400 ? 'status-3xx' :
+      item.status >= 400 ? 'status-4xx' : '';
+    el.innerHTML = `<span class="${statusClass}">${item.method} ${item.status}</span> ${escapeHtml((item.url || '').slice(0, 40))}...`;
+    list.appendChild(el);
+  });
+}
+
+function renderSidebar() {
+  renderCollections();
+  renderHistory();
+  const envSelect = document.getElementById('wb-env-select');
+  if (envSelect) {
+    const cur = envSelect.value;
+    envSelect.innerHTML = '<option value="">No Environment</option>' +
+      environments.map((e) => '<option value="' + escapeHtml(e.id) + '"' + (e.id === activeEnvId ? ' selected' : '') + '>' + escapeHtml(e.name) + '</option>').join('');
+    if (cur) envSelect.value = cur;
+  }
+}
+
+// --- Render: Request Panel ---
+function buildKvTable(rows, keyLabel, valueLabel) {
+  let html = '<table class="wb-kv-table"><thead><tr><th></th><th>' + keyLabel + '</th><th>' + valueLabel + '</th></tr></thead><tbody>';
+  rows.forEach((row, i) => {
+    html += '<tr data-i="' + i + '"><td><input type="checkbox" ' + (row.enabled ? 'checked' : '') + ' data-enabled></td>';
+    html += '<td><input type="text" data-key value="' + escapeHtml(row.key) + '" placeholder="Key"></td>';
+    html += '<td><input type="text" data-value value="' + escapeHtml(row.value) + '" placeholder="Value"></td></tr>';
+  });
+  html += '</tbody></table><button type="button" class="wb-add-row">+ Add row</button>';
+  return html;
+}
+
+function attachKvListeners(container, rowsRef, onRowChange) {
+  if (!container) return;
+  container.querySelectorAll('input[data-enabled]').forEach((cb) => {
+    cb.addEventListener('change', function () {
+      const tr = this.closest('tr');
+      const i = parseInt(tr.dataset.i, 10);
+      rowsRef[i].enabled = this.checked;
+      onRowChange && onRowChange();
+    });
+  });
+  container.querySelectorAll('input[data-key]').forEach((inp) => {
+    inp.addEventListener('input', function () {
+      const i = parseInt(this.closest('tr').dataset.i, 10);
+      rowsRef[i].key = this.value;
+      onRowChange && onRowChange();
+    });
+  });
+  container.querySelectorAll('input[data-value]').forEach((inp) => {
+    inp.addEventListener('input', function () {
+      const i = parseInt(this.closest('tr').dataset.i, 10);
+      rowsRef[i].value = this.value;
+      onRowChange && onRowChange();
+    });
+  });
+  const addBtn = container.querySelector('.wb-add-row');
+  if (addBtn) {
+    addBtn.addEventListener('click', () => {
+      rowsRef.push({ key: '', value: '', enabled: true });
+      renderRequestTabContent();
+    });
+  }
+}
+
+function buildBodyTab() {
+  const types = [
+    { value: 'none', label: 'None' },
+    { value: 'json', label: 'JSON' },
+    { value: 'form', label: 'URL-encoded Form' },
+    { value: 'raw', label: 'Raw' },
+  ];
+  let html = '<label>Body type</label><select id="wb-body-type" class="wb-select">';
+  types.forEach((t) => { html += '<option value="' + t.value + '"' + (current.bodyType === t.value ? ' selected' : '') + '>' + t.label + '</option>'; });
+  html += '</select>';
+  html += '<div id="wb-body-editor-wrap"><textarea id="wb-body-content" class="wb-textarea" rows="6" placeholder="Body content">' + escapeHtml(current.bodyContent) + '</textarea>';
+  html += '<button type="button" id="wb-format-json" class="wb-btn">Format</button></div>';
+  return html;
+}
+
+function attachBodyListeners() {
+  const typeSelect = document.getElementById('wb-body-type');
+  const contentEl = document.getElementById('wb-body-content');
+  const formatBtn = document.getElementById('wb-format-json');
+  if (typeSelect) typeSelect.addEventListener('change', () => { current.bodyType = typeSelect.value; renderRequestTabContent(); });
+  if (contentEl) contentEl.addEventListener('input', () => { current.bodyContent = contentEl.value; });
+  if (formatBtn) formatBtn.addEventListener('click', () => {
+    try {
+      const parsed = JSON.parse(current.bodyContent || '{}');
+      current.bodyContent = JSON.stringify(parsed, null, 2);
+      renderRequestTabContent();
+    } catch (_) {}
+  });
+}
+
+function buildAuthTab() {
+  let html = '<label>Auth type</label><select id="wb-auth-type" class="wb-select">';
+  ['none', 'bearer', 'basic', 'apikey'].forEach((t) => { html += '<option value="' + t + '"' + (current.authType === t ? ' selected' : '') + '>' + t + '</option>'; });
+  html += '</select>';
+  html += '<div id="wb-auth-bearer" class="wb-auth-section"><label>Token</label><input id="wb-auth-bearer-input" type="text" class="wb-input" value="' + escapeHtml(current.authBearer) + '" placeholder="Bearer token"></div>';
+  html += '<div id="wb-auth-basic" class="wb-auth-section"><label>Username</label><input id="wb-auth-basic-user" type="text" class="wb-input" value="' + escapeHtml(current.authBasicUser) + '"><label>Password</label><input id="wb-auth-basic-pass" type="password" class="wb-input" value="' + escapeHtml(current.authBasicPass) + '"></div>';
+  html += '<div id="wb-auth-apikey" class="wb-auth-section"><label>Key (header or param name)</label><input id="wb-auth-apikey-key" type="text" class="wb-input" value="' + escapeHtml(current.authApiKeyKey) + '"><label>Value</label><input id="wb-auth-apikey-value" type="text" class="wb-input" value="' + escapeHtml(current.authApiKeyValue) + '"><label>Add to</label><select id="wb-auth-apikey-place"><option value="header"' + (current.authApiKeyPlace === 'header' ? ' selected' : '') + '>Header</option><option value="query"' + (current.authApiKeyPlace === 'query' ? ' selected' : '') + '>Query param</option></select></div>';
+  return html;
+}
+
+function attachAuthListeners() {
+  const typeSelect = document.getElementById('wb-auth-type');
+  if (typeSelect) typeSelect.addEventListener('change', () => { current.authType = typeSelect.value; renderRequestTabContent(); });
+  const bearerInput = document.getElementById('wb-auth-bearer-input');
+  if (bearerInput) bearerInput.addEventListener('input', () => { current.authBearer = bearerInput.value; });
+  const basicUser = document.getElementById('wb-auth-basic-user');
+  if (basicUser) basicUser.addEventListener('input', () => { current.authBasicUser = basicUser.value; });
+  const basicPass = document.getElementById('wb-auth-basic-pass');
+  if (basicPass) basicPass.addEventListener('input', () => { current.authBasicPass = basicPass.value; });
+  const apiKeyKey = document.getElementById('wb-auth-apikey-key');
+  if (apiKeyKey) apiKeyKey.addEventListener('input', () => { current.authApiKeyKey = apiKeyKey.value; });
+  const apiKeyValue = document.getElementById('wb-auth-apikey-value');
+  if (apiKeyValue) apiKeyValue.addEventListener('input', () => { current.authApiKeyValue = apiKeyValue.value; });
+  const apiKeyPlace = document.getElementById('wb-auth-apikey-place');
+  if (apiKeyPlace) apiKeyPlace.addEventListener('change', () => { current.authApiKeyPlace = apiKeyPlace.value; });
+}
+
+function buildGraphqlPanel() {
+  return '<label>Query</label><textarea id="wb-gql-query" class="wb-textarea" rows="8" placeholder="query { ... }">' + escapeHtml(current.graphqlQuery) + '</textarea>' +
+    '<label>Variables (JSON)</label><textarea id="wb-gql-variables" class="wb-textarea" rows="4" placeholder="{}">' + escapeHtml(current.graphqlVariables) + '</textarea>';
+}
+
+function attachGraphqlListeners() {
+  const queryEl = document.getElementById('wb-gql-query');
+  const varsEl = document.getElementById('wb-gql-variables');
+  if (queryEl) queryEl.addEventListener('input', () => { current.graphqlQuery = queryEl.value; });
+  if (varsEl) varsEl.addEventListener('input', () => { current.graphqlVariables = varsEl.value; });
+}
+
+function renderRequestTabContent() {
+  const content = document.getElementById('wb-request-tab-content');
+  if (!content) return;
+  if (current.isGraphql && activeTab === 'body') {
+    content.innerHTML = buildGraphqlPanel();
+    attachGraphqlListeners();
+    return;
+  }
+  if (activeTab === 'params') {
+    content.innerHTML = buildKvTable(current.params, 'Key', 'Value');
+    attachKvListeners(content, current.params, syncUrlFromParams);
+    return;
+  }
+  if (activeTab === 'headers') {
+    content.innerHTML = buildKvTable(current.headers, 'Key', 'Value');
+    attachKvListeners(content, current.headers);
+    return;
+  }
+  if (activeTab === 'body') {
+    content.innerHTML = buildBodyTab();
+    attachBodyListeners();
+    return;
+  }
+  if (activeTab === 'auth') {
+    content.innerHTML = buildAuthTab();
+    attachAuthListeners();
+    document.getElementById('wb-auth-bearer').style.display = current.authType === 'bearer' ? 'block' : 'none';
+    document.getElementById('wb-auth-basic').style.display = current.authType === 'basic' ? 'block' : 'none';
+    document.getElementById('wb-auth-apikey').style.display = current.authType === 'apikey' ? 'block' : 'none';
+    return;
+  }
+}
+
+function renderRequestPanel() {
+  document.querySelectorAll('.wb-request-tab').forEach((tab) => {
+    const t = tab.id.replace('wb-tab-', '');
+    tab.classList.toggle('active', t === activeTab);
+  });
+  const methodSelect = document.getElementById('wb-method');
+  if (methodSelect) {
+    methodSelect.innerHTML = METHODS.map((m) => '<option value="' + m + '"' + (current.method === m ? ' selected' : '') + '>' + m + '</option>').join('');
+    methodSelect.disabled = current.isGraphql;
+  }
+  const urlInput = document.getElementById('wb-url');
+  if (urlInput && urlInput.value !== current.url) urlInput.value = current.url || '';
+  renderRequestTabContent();
+}
+
+// --- Render: Modals ---
+function renderEnvModal() {
+  const list = document.getElementById('wb-env-list');
+  const varsWrap = document.getElementById('wb-env-vars');
+  const varsTable = document.getElementById('wb-env-vars-table-wrap');
+  if (!list) return;
+  list.innerHTML = environments.map((e) => `
+    <div class="wb-env-list-item ${e.id === activeEnvEditId ? 'active' : ''}" data-id="${escapeHtml(e.id)}">
+      <span>${escapeHtml(e.name)}</span>
+      <button type="button" class="wb-env-delete" data-id="${escapeHtml(e.id)}">Delete</button>
+    </div>
+  `).join('');
+
+  if (activeEnvEditId) {
+    const env = environments.find((e) => e.id === activeEnvEditId);
+    varsWrap.classList.remove('hidden');
+    if (varsTable && env) {
+      if (!env.variables || !env.variables.length) env.variables = [{ key: '', value: '', enabled: true }];
+      varsTable.innerHTML = buildKvTable(env.variables, 'Key', 'Value');
+      attachKvListeners(varsTable, env.variables, () => saveState());
+    }
+  } else {
+    varsWrap.classList.add('hidden');
+  }
+}
+
+function renderSaveModal() {
+  const collSelect = document.getElementById('wb-save-collection');
+  const nameInput = document.getElementById('wb-save-name');
+  if (collSelect) {
+    collSelect.innerHTML = collections.map((c) => '<option value="' + escapeHtml(c.id) + '">' + escapeHtml(c.name) + '</option>').join('');
+    if (collections.length) collSelect.value = collections[0].id;
+  }
+  if (nameInput) nameInput.value = current.name || current.url || '';
+}
+
+// --- Render ---
+function render() {
+  renderSidebar();
+  renderRequestPanel();
+  renderResponsePanel();
+  renderSendBtn();
+  if (envModalOpen) renderEnvModal();
+  if (saveModalOpen) renderSaveModal();
+}
+
+// --- Collections Actions ---
+function createCollection() {
+  const name = prompt('Collection name');
+  if (!name || !name.trim()) return;
+  collections.push({ id: uid(), name: name.trim(), requests: [] });
+  save();
+}
+
+function deleteCollection(id) {
+  collections = collections.filter((c) => c.id !== id);
+  expandedCollections.delete(id);
+  save();
+}
+
+function toggleCollection(id) {
+  if (expandedCollections.has(id)) expandedCollections.delete(id);
+  else expandedCollections.add(id);
+  save();
+}
+
+function saveRequestToCollection() {
+  const collId = document.getElementById('wb-save-collection') && document.getElementById('wb-save-collection').value;
+  const nameInput = document.getElementById('wb-save-name');
+  const name = nameInput ? nameInput.value.trim() : '';
+  if (!collId || !name) return;
+  const coll = collections.find((c) => c.id === collId);
+  if (!coll) return;
+  const req = {
+    id: uid(),
+    name: name || current.url || 'Untitled',
+    method: current.method,
+    url: current.url,
+    params: JSON.parse(JSON.stringify(current.params)),
+    headers: JSON.parse(JSON.stringify(current.headers)),
+    bodyType: current.bodyType,
+    bodyContent: current.bodyContent,
+    authType: current.authType,
+    authBearer: current.authBearer,
+    authBasicUser: current.authBasicUser,
+    authBasicPass: current.authBasicPass,
+    authApiKeyKey: current.authApiKeyKey,
+    authApiKeyValue: current.authApiKeyValue,
+    authApiKeyPlace: current.authApiKeyPlace,
+    isGraphql: current.isGraphql,
+    graphqlQuery: current.graphqlQuery,
+    graphqlVariables: current.graphqlVariables,
+  };
+  coll.requests = coll.requests || [];
+  coll.requests.push(req);
+  expandedCollections.add(coll.id);
+  saveModalOpen = false;
+  document.getElementById('wb-save-modal').classList.add('hidden');
+  save();
+}
+
+function deleteCollectionRequest(collId, reqId) {
+  const coll = collections.find((c) => c.id === collId);
+  if (!coll || !coll.requests) return;
+  coll.requests = coll.requests.filter((r) => r.id !== reqId);
+  save();
+}
+
+function loadRequest(req) {
+  current = { ...defaultRequest(), ...req, id: current.id, params: req.params || [{ key: '', value: '', enabled: true }], headers: req.headers || [{ key: '', value: '', enabled: true }] };
+  const urlInput = document.getElementById('wb-url');
+  if (urlInput) urlInput.value = current.url || '';
+  save();
+}
+
+function loadHistoryItem(item) {
+  current.url = item.url;
+  current.method = item.method;
+  const urlInput = document.getElementById('wb-url');
+  if (urlInput) urlInput.value = item.url || '';
+  save();
+}
+
+function clearHistory() {
+  history = [];
+  save();
+}
+
+// --- Response Download ---
+function downloadResponse() {
+  if (!response || !response.body) return;
+  const blob = new Blob([response.body], { type: 'application/octet-stream' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'response-' + Date.now() + '.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// --- Init ---
+(function () {
+  document.getElementById('wb-method').innerHTML = METHODS.map((m) => '<option value="' + m + '">' + m + '</option>').join('');
+
+  (async () => {
+    Theme.init({ defaultMode: 'dark' });
+    const dashboardBtn = document.getElementById('dashboard-btn');
+    if (dashboardBtn) {
+      dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+    }
+    Theme.mountToggle(document.getElementById('theme-toggle'));
+
+    db = await dbOpen();
+    collections = (await dbGet(db, 'collections')) || [];
+    environments = (await dbGet(db, 'environments')) || [];
+    history = (await dbGet(db, 'history')) || [];
+    activeEnvId = await dbGet(db, 'activeEnvId');
+    const saved = await dbGet(db, 'current');
+    if (saved && saved.url !== undefined) current = { ...defaultRequest(), ...saved };
+    const exp = await dbGet(db, 'expandedCollections');
+    if (Array.isArray(exp)) expandedCollections = new Set(exp);
+
+    render();
+
+    document.getElementById('wb-method').addEventListener('change', () => { current.method = document.getElementById('wb-method').value; save(); });
+    document.getElementById('wb-url').addEventListener('input', () => { current.url = document.getElementById('wb-url').value; });
+    document.getElementById('wb-url').addEventListener('blur', () => { syncParamsFromUrl(); save(); });
+    document.getElementById('wb-send-btn').addEventListener('click', sendRequest);
+    document.getElementById('wb-mode-rest').addEventListener('click', () => { current.isGraphql = false; save(); render(); });
+    document.getElementById('wb-mode-gql').addEventListener('click', () => { current.isGraphql = true; save(); render(); });
+
+    ['params', 'headers', 'body', 'auth'].forEach((t) => {
+      document.getElementById('wb-tab-' + t).addEventListener('click', () => { activeTab = t; renderRequestPanel(); });
+    });
+    document.getElementById('wb-response-tab-body').addEventListener('click', () => {
+      activeResponseTab = 'body';
+      document.getElementById('wb-response-body').classList.remove('hidden');
+      document.getElementById('wb-response-headers').classList.add('hidden');
+      document.querySelectorAll('.wb-response-tab').forEach((tab) => tab.classList.remove('active'));
+      document.getElementById('wb-response-tab-body').classList.add('active');
+    });
+    document.getElementById('wb-response-tab-headers').addEventListener('click', () => {
+      activeResponseTab = 'headers';
+      document.getElementById('wb-response-body').classList.add('hidden');
+      document.getElementById('wb-response-headers').classList.remove('hidden');
+      document.querySelectorAll('.wb-response-tab').forEach((tab) => tab.classList.remove('active'));
+      document.getElementById('wb-response-tab-headers').classList.add('active');
+    });
+
+    document.getElementById('wb-sidebar-collections').addEventListener('click', () => { sidebarTab = 'collections'; document.getElementById('wb-sidebar-collections-panel').classList.remove('hidden'); document.getElementById('wb-sidebar-history-panel').classList.add('hidden'); document.querySelectorAll('.wb-sidebar-tab').forEach((t) => t.classList.remove('active')); document.getElementById('wb-sidebar-collections').classList.add('active'); });
+    document.getElementById('wb-sidebar-history').addEventListener('click', () => { sidebarTab = 'history'; document.getElementById('wb-sidebar-collections-panel').classList.add('hidden'); document.getElementById('wb-sidebar-history-panel').classList.remove('hidden'); document.querySelectorAll('.wb-sidebar-tab').forEach((t) => t.classList.remove('active')); document.getElementById('wb-sidebar-history').classList.add('active'); });
+    document.getElementById('wb-new-collection').addEventListener('click', createCollection);
+    document.getElementById('wb-clear-history').addEventListener('click', () => { clearHistory(); renderSidebar(); });
+
+    document.getElementById('wb-download-btn').addEventListener('click', downloadResponse);
+    document.getElementById('wb-curl-btn').addEventListener('click', () => { navigator.clipboard.writeText(buildCurl()); });
+    document.getElementById('wb-save-to-collection-btn').addEventListener('click', () => { saveModalOpen = true; document.getElementById('wb-save-modal').classList.remove('hidden'); renderSaveModal(); });
+
+    document.getElementById('wb-env-select').addEventListener('change', () => { activeEnvId = document.getElementById('wb-env-select').value || null; save(); });
+    document.getElementById('wb-env-btn').addEventListener('click', () => { envModalOpen = true; document.getElementById('wb-env-modal').classList.remove('hidden'); renderEnvModal(); });
+    document.getElementById('wb-env-modal-close').addEventListener('click', () => { envModalOpen = false; document.getElementById('wb-env-modal').classList.add('hidden'); });
+    document.querySelector('#wb-env-modal .wb-modal-backdrop').addEventListener('click', () => { envModalOpen = false; document.getElementById('wb-env-modal').classList.add('hidden'); });
+    document.getElementById('wb-env-add').addEventListener('click', () => {
+      const name = prompt('Environment name');
+      if (!name || !name.trim()) return;
+      environments.push({ id: uid(), name: name.trim(), variables: [] });
+      activeEnvEditId = environments[environments.length - 1].id;
+      renderEnvModal();
+      save();
+    });
+    document.getElementById('wb-env-set-active').addEventListener('click', () => {
+      if (activeEnvEditId) { activeEnvId = activeEnvEditId; save(); renderSidebar(); }
+    });
+    document.getElementById('wb-save-modal-close').addEventListener('click', () => { saveModalOpen = false; document.getElementById('wb-save-modal').classList.add('hidden'); });
+    document.querySelector('#wb-save-modal .wb-modal-backdrop').addEventListener('click', () => { saveModalOpen = false; document.getElementById('wb-save-modal').classList.add('hidden'); });
+    document.getElementById('wb-save-submit').addEventListener('click', saveRequestToCollection);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (envModalOpen) { envModalOpen = false; document.getElementById('wb-env-modal').classList.add('hidden'); }
+        if (saveModalOpen) { saveModalOpen = false; document.getElementById('wb-save-modal').classList.add('hidden'); }
+      }
+      if (e.ctrlKey && e.key === 'Enter') { e.preventDefault(); sendRequest(); }
+    });
+
+    document.getElementById('wb-collections-tree').addEventListener('click', (e) => {
+      const header = e.target.closest('.wb-collection-header');
+      const del = e.target.closest('.wb-request-item-delete');
+      const reqItem = e.target.closest('.wb-request-item');
+      if (header) {
+        const id = header.dataset.id;
+        toggleCollection(id);
+      } else if (del) {
+        e.stopPropagation();
+        const collId = del.closest('.wb-request-item').dataset.collId;
+        const reqId = del.closest('.wb-request-item').dataset.reqId;
+        deleteCollectionRequest(collId, reqId);
+      } else if (reqItem && !del) {
+        const coll = collections.find((c) => c.id === reqItem.dataset.collId);
+        const req = coll && (coll.requests || []).find((r) => r.id === reqItem.dataset.reqId);
+        if (req) loadRequest(req);
+      }
+    });
+
+    document.getElementById('wb-history-list').addEventListener('click', (e) => {
+      const item = e.target.closest('.wb-history-item');
+      if (item && item.dataset.id) {
+        const h = history.find((x) => x.id === item.dataset.id);
+        if (h) loadHistoryItem(h);
+      }
+    });
+
+    document.getElementById('wb-env-list').addEventListener('click', (e) => {
+      const row = e.target.closest('.wb-env-list-item');
+      const delBtn = e.target.closest('.wb-env-delete');
+      if (delBtn) {
+        e.stopPropagation();
+        const id = delBtn.dataset.id;
+        environments = environments.filter((env) => env.id !== id);
+        if (activeEnvId === id) activeEnvId = null;
+        if (activeEnvEditId === id) activeEnvEditId = null;
+        save();
+        renderEnvModal();
+        renderSidebar();
+      } else if (row) {
+        activeEnvEditId = row.dataset.id;
+        renderEnvModal();
+      }
+    });
+  })();
+})();
+  </script>
+</body>
+
+</html>
