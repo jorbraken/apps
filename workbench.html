@@ -17,7 +17,7 @@
       <select id="wb-env-select" class="wb-env-select" title="Environment">
         <option value="">No Environment</option>
       </select>
-      <button id="dashboard-btn" class="wb-icon-btn" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+      <button id="home-btn" class="wb-icon-btn" aria-label="Go to home" title="Go to home">⌂</button>
       <button id="theme-toggle" class="wb-icon-btn" aria-label="Switch theme" title="Switch theme"></button>
       <button id="wb-env-btn" class="wb-icon-btn" title="Manage environments">&#9881;</button>
     </div>
@@ -216,8 +216,8 @@
   };
 
   window.AppNav = {
-    goDashboard() {
-      window.location.href = 'dashboard.html';
+    goHome() {
+      window.location.href = 'index.html';
     },
   };
 })();
@@ -995,9 +995,9 @@ function downloadResponse() {
 
   (async () => {
     Theme.init({ defaultMode: 'dark' });
-    const dashboardBtn = document.getElementById('dashboard-btn');
-    if (dashboardBtn) {
-      dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+    const homeBtn = document.getElementById('home-btn');
+    if (homeBtn) {
+      homeBtn.addEventListener('click', () => AppNav.goHome());
     }
     Theme.mountToggle(document.getElementById('theme-toggle'));
 

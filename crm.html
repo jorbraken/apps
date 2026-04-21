@@ -12,7 +12,7 @@
 
 <body>
   <div class="toolbar">
-    <button id="dashboard-btn" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+    <button id="home-btn" aria-label="Go to home" title="Go to home">⌂</button>
     <span class="title">CRM</span>
     <div class="toolbar-views">
       <button id="btn-graph" class="active" title="Graph view">Graph</button>
@@ -246,8 +246,8 @@
   };
 
   window.AppNav = {
-    goDashboard() {
-      window.location.href = 'dashboard.html';
+    goHome() {
+      window.location.href = 'index.html';
     },
   };
 })();
@@ -1212,9 +1212,9 @@ document.addEventListener('keydown', (e) => {
 // --- Init ---
 (async () => {
   Theme.init({ defaultMode: 'dark' });
-  const dashboardBtn = document.getElementById('dashboard-btn');
-  if (dashboardBtn) {
-    dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+  const homeBtn = document.getElementById('home-btn');
+  if (homeBtn) {
+    homeBtn.addEventListener('click', () => AppNav.goHome());
   }
   Theme.mountToggle(document.getElementById('theme-toggle'));
   db = await dbOpen();

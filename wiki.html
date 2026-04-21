@@ -23,7 +23,7 @@
           Import JSON
           <input id="import-input" type="file" accept="application/json" hidden>
         </label>
-        <button id="dashboard-btn" class="wk-icon-btn" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+        <button id="home-btn" class="wk-icon-btn" aria-label="Go to home" title="Go to home">⌂</button>
         <button id="theme-toggle" class="wk-icon-btn" aria-label="Switch theme" title="Switch theme"></button>
       </div>
     </header>
@@ -219,8 +219,8 @@
   };
 
   window.AppNav = {
-    goDashboard() {
-      window.location.href = 'dashboard.html';
+    goHome() {
+      window.location.href = 'index.html';
     },
   };
 })();
@@ -286,7 +286,7 @@ const el = {
   inputBody: document.getElementById('note-body'),
   preview: document.getElementById('note-preview'),
   backlinks: document.getElementById('backlinks'),
-  dashboardBtn: document.getElementById('dashboard-btn'),
+  homeBtn: document.getElementById('home-btn'),
   themeToggle: document.getElementById('theme-toggle'),
   mobileTabs: document.getElementById('mobile-tabs'),
   confirmDialog: document.getElementById('confirm-dialog'),
@@ -1268,7 +1268,7 @@ function bindEvents() {
     el.importInput.value = '';
   });
 
-  el.dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+  el.homeBtn.addEventListener('click', () => AppNav.goHome());
 
   el.mobileTabs.addEventListener('click', async (e) => {
     const t = e.target;

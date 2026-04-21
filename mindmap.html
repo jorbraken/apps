@@ -13,7 +13,7 @@
 <body>
   <div class="toolbar">
     <span class="title">Mindmap</span>
-    <button id="dashboard-btn" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+    <button id="home-btn" aria-label="Go to home" title="Go to home">⌂</button>
     <button id="theme-toggle" aria-label="Switch theme" title="Switch theme"></button>
     <button id="btn-zoom-in">+</button>
     <button id="btn-zoom-out">&minus;</button>
@@ -123,8 +123,8 @@
   };
 
   window.AppNav = {
-    goDashboard() {
-      window.location.href = 'dashboard.html';
+    goHome() {
+      window.location.href = 'index.html';
     },
   };
 })();
@@ -452,9 +452,9 @@ function centerRoot() {
 // --- Init ---
 (async () => {
   Theme.init({ defaultMode: 'dark' });
-  const dashboardBtn = document.getElementById('dashboard-btn');
-  if (dashboardBtn) {
-    dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+  const homeBtn = document.getElementById('home-btn');
+  if (homeBtn) {
+    homeBtn.addEventListener('click', () => AppNav.goHome());
   }
   Theme.mountToggle(document.getElementById('theme-toggle'));
   db = await dbOpen();

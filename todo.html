@@ -16,7 +16,7 @@
       <div class="sidebar-header">
         <span class="sidebar-title">Lists</span>
         <div class="sidebar-actions">
-          <button id="dashboard-btn" class="add-list-btn theme-toggle" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+          <button id="home-btn" class="add-list-btn theme-toggle" aria-label="Go to home" title="Go to home">⌂</button>
           <button id="theme-toggle" class="add-list-btn theme-toggle" aria-label="Switch theme" title="Switch theme"></button>
           <button id="add-list-btn" class="add-list-btn" title="New list">+</button>
         </div>
@@ -133,8 +133,8 @@
   };
 
   window.AppNav = {
-    goDashboard() {
-      window.location.href = 'dashboard.html';
+    goHome() {
+      window.location.href = 'index.html';
     },
   };
 })();
@@ -340,9 +340,9 @@ function remove(i) {
 // --- Init ---
 (async () => {
   Theme.init({ defaultMode: 'dark' });
-  const dashboardBtn = document.getElementById('dashboard-btn');
-  if (dashboardBtn) {
-    dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+  const homeBtn = document.getElementById('home-btn');
+  if (homeBtn) {
+    homeBtn.addEventListener('click', () => AppNav.goHome());
   }
   Theme.mountToggle(document.getElementById('theme-toggle'));
 

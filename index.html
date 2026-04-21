@@ -120,14 +120,14 @@
   };
 
   window.AppNav = {
-    goDashboard() {
+    goHome() {
       window.location.href = 'index.html';
     },
   };
 })();
   </script>
   <script>
-const APPS = ["crm","dashboard","diagram","kanban","mindmap","notes","research","todo","wiki","workbench"];
+const APPS = ["crm","diagram","kanban","mindmap","notes","research","todo","wiki","workbench"];
 
 const ICONS = {
   todo: '\u2705',
@@ -136,7 +136,7 @@ const ICONS = {
   notes: '\u{1F4DD}',
   diagram: '\u{1F3F9}',
   research: '\u{1F50E}',
-  dashboard: '\u{1F3E0}',
+  home: '\u{1F3E0}',
   workbench: '\u{1F527}',
   crm: '\u{1F465}',
 };
@@ -149,7 +149,7 @@ function render() {
   const grid = document.getElementById('grid');
   grid.innerHTML = '';
 
-  const apps = APPS.filter(name => name !== 'dashboard');
+  const apps = APPS.filter(name => name !== 'home' && name !== 'index');
 
   apps.forEach(name => {
     const title = name.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());

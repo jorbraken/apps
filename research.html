@@ -18,7 +18,7 @@
         <p>Save links, snippets, and notes</p>
       </div>
       <div class="rm-header-actions">
-        <button id="dashboard-btn" class="rm-icon-btn" aria-label="Go to dashboard" title="Go to dashboard">⌂</button>
+        <button id="home-btn" class="rm-icon-btn" aria-label="Go to home" title="Go to home">⌂</button>
         <button id="theme-toggle" class="rm-icon-btn" aria-label="Switch theme" title="Switch theme"></button>
       </div>
     </header>
@@ -160,8 +160,8 @@
   };
 
   window.AppNav = {
-    goDashboard() {
-      window.location.href = 'dashboard.html';
+    goHome() {
+      window.location.href = 'index.html';
     },
   };
 })();
@@ -227,7 +227,7 @@ const el = {
   tagCatalog: document.getElementById('tag-catalog'),
   activeFilters: document.getElementById('active-filters'),
   themeToggle: document.getElementById('theme-toggle'),
-  dashboardBtn: document.getElementById('dashboard-btn'),
+  homeBtn: document.getElementById('home-btn'),
 };
 
 function uid(prefix) {
@@ -642,7 +642,7 @@ function bindDynamicActions() {
 async function init() {
   Theme.init({ defaultMode: 'dark' });
   Theme.mountToggle(el.themeToggle);
-  el.dashboardBtn.addEventListener('click', () => AppNav.goDashboard());
+  el.homeBtn.addEventListener('click', () => AppNav.goHome());
 
   state.db = await dbOpen();
   state.items = (await dbGet(state.db, 'items')) || [];
